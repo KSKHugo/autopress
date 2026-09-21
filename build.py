@@ -86,7 +86,7 @@ EN = {
     "end_lede": "Hybrid AutoPress is coming to the App Store — one app for iPhone, iPad and Mac.",
     "req": "Requires iOS 17, iPadOS 17 or macOS 14 · English and German",
     "foot_imprint": "Legal Notice (Impressum)", "foot_privacy": "Privacy Policy", "foot_hybrid": "Hybrid Editor",
-    "foot_imprint_href": "https://hybrid-editor.com/impressum/", "foot_privacy_href": "https://hybrid-editor.com/datenschutz/",
+    "foot_imprint_href": "impressum/", "foot_privacy_href": "https://hybrid-editor.com/datenschutz/",
     "foot_hybrid_href": "https://hybrid-editor.com/",
     "fine": "WordPress is a trademark of the WordPress Foundation. Hybrid AutoPress is an independent app and is not affiliated with or endorsed by the WordPress Foundation, Automattic or any of the hosting companies named. Apple, iPhone, iPad, Mac and App Store are trademarks of Apple Inc. The screenshots show sample content.",
 }
@@ -163,6 +163,7 @@ DE = dict(EN, **{
     "end_lede": "Hybrid AutoPress kommt in den App Store — eine App für iPhone, iPad und Mac.",
     "req": "Benötigt iOS 17, iPadOS 17 oder macOS 14 · Englisch und Deutsch",
     "foot_imprint": "Impressum", "foot_privacy": "Datenschutz", "foot_hybrid": "Hybrid Editor",
+    "foot_imprint_href": "../impressum/",
     "foot_hybrid_href": "https://hybrid-editor.com/de/",
     "fine": "WordPress ist eine Marke der WordPress Foundation. Hybrid AutoPress ist eine unabhängige App und steht in keiner Verbindung zur WordPress Foundation, zu Automattic oder zu den genannten Hosting-Anbietern. Apple, iPhone, iPad, Mac und App Store sind Marken von Apple Inc. Die Screenshots zeigen Beispielinhalte; die Oberfläche der App gibt es auf Deutsch und Englisch.",
 })

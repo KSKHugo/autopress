@@ -350,3 +350,22 @@ footer a:hover { text-decoration: underline; }
   .soon i { animation: none; }
   .hero__shot { transform: none; }
 }
+
+/* ── Legal pages (Impressum) ────────────────────────────────── */
+
+.legal-hero { padding: calc(var(--nav-h) + clamp(48px, 9vh, 96px)) var(--gutter) clamp(48px, 8vh, 80px); }
+.legal-hero .lede { max-width: 44em; }
+.legal { padding: clamp(40px, 7vh, 80px) var(--gutter) clamp(64px, 10vh, 112px); }
+.legal__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.legal__card { background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 28px 30px; }
+.legal__card--wide { grid-column: 1 / -1; }
+.legal__card h2 {
+  font-size: 13px; line-height: 1.4; font-weight: 650; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--amber-ink); margin-bottom: 14px; text-wrap: pretty;
+}
+.legal__card p, .legal__card address { font-style: normal; font-size: 17px; line-height: 1.6; color: var(--ink); max-width: 62em; }
+.legal__card p + p { margin-top: 14px; color: var(--ink-2); }
+.legal__card a { color: var(--amber-ink); font-weight: 600; text-underline-offset: 3px; }
+.legal__back { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 8px 32px; justify-content: space-between; margin-top: 14px; }
+@media (max-width: 760px) { .legal__grid { grid-template-columns: 1fr; } }
+.brand span { white-space: nowrap; }
