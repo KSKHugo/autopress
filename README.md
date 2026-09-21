@@ -1,13 +1,13 @@
-# Hybrid AutoPress — website
+# Hybrid AutoPress website
 
 The one-page site for [Hybrid AutoPress](https://kskhugo.github.io/autopress/), the app that
-uploads many Markdown files to WordPress at once — for iPhone, iPad and Mac.
+uploads many Markdown files to WordPress at once, for iPhone, iPad and Mac.
 
 Live: <https://kskhugo.github.io/autopress/> (English) · <https://kskhugo.github.io/autopress/de/> (Deutsch)
 
 ## How it is built
 
-Plain HTML, CSS and a little JavaScript — no framework, no dependencies, served by GitHub Pages
+Plain HTML, CSS and a little JavaScript: no framework, no dependencies, served by GitHub Pages
 straight from `main`.
 
 ```
@@ -27,7 +27,7 @@ Change words in `build.py`, structure in `template.html`, then:
 python3 build.py
 ```
 
-`index.html` and `de/index.html` are generated — do not edit them by hand. A further language is
+`index.html` and `de/index.html` are generated. Do not edit them by hand. A further language is
 one more dictionary in `build.py`.
 
 ## The scroll

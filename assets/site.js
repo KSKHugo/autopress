@@ -1,4 +1,4 @@
-// Hybrid AutoPress — scroll behaviour. No dependencies.
+// Hybrid AutoPress: scroll behaviour. No dependencies.
 (function () {
   "use strict";
   var root = document.documentElement;
