@@ -17,6 +17,7 @@ assets/style.css   design: navy #1A3A5E / #254E7A and amber #F59E0B from the app
 assets/site.js     reveal on scroll, the pinned walkthrough, the hero zoom
 assets/img/        app icon and screenshots (Mac, iPad, iPhone)
 impressum/         the legal notice (German law), a static page in the same design
+datenschutz/       the privacy policy for the website, likewise static
 serve.js           tiny static server for a local preview: node serve.js
 ```
 
