@@ -11,7 +11,7 @@ import re
 from pathlib import Path
 
 HERE = Path(__file__).parent
-SITE = "https://kskhugo.github.io/autopress/"
+SITE = "https://hybrid-autopress.com/"
 
 EN = {
     "lang": "en", "path": "", "root": "",

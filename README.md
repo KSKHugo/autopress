@@ -1,9 +1,9 @@
 # Hybrid AutoPress website
 
-The one-page site for [Hybrid AutoPress](https://kskhugo.github.io/autopress/), the app that
+The one-page site for [Hybrid AutoPress](https://hybrid-autopress.com/), the app that
 uploads many Markdown files to WordPress at once, for iPhone, iPad and Mac.
 
-Live: <https://kskhugo.github.io/autopress/> (English) · <https://kskhugo.github.io/autopress/de/> (Deutsch)
+Live: <https://hybrid-autopress.com/> (English) · <https://hybrid-autopress.com/de/> (Deutsch)
 
 ## How it is built
 
