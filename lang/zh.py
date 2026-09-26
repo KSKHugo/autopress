@@ -11,7 +11,7 @@ T = {
     "hero_lede": "Hybrid AutoPress 一次把许多 Markdown 文件上传到 WordPress。每个文件成为一篇文章或一个页面，保留标题、链接、列表、表格和图片，可存为草稿、立即发布或定时发布。",
     "soon": "即将登陆 App Store",
     "hero_more": "看看它怎么用",
-    "hero_alt": "Mac 上的 Hybrid AutoPress：列表中有七篇 Markdown 文稿，文章“Lisbon in Three Days”带有特色图片、署名、替代文本、别名、摘要和分类。",
+    "hero_alt": "Mac 上的 Hybrid AutoPress：列表中有七篇 Markdown 文稿，文章“里斯本三日游”带有特色图片、署名、替代文本、别名、摘要和分类。",
 
     "step": "步骤",
     "s1_h": "添加文件。或者整个文件夹。",
@@ -25,7 +25,7 @@ T = {
     "s3_alt": "上传进行中：七篇中三篇完成，一篇正在 WordPress 中创建，其余等待。",
     "s4_h": "完成。附带返回链接。",
     "s4_p": "每篇完成的文稿都有绿色对勾，以及在网站上查看或在 WordPress 中继续编辑的链接。如果出错，AutoPress 会告诉你原因和解决办法，并在下次重新发送。",
-    "s4_alt": "七篇文稿都带绿色对勾；选中的那篇提供“View”和“Edit in WordPress”。",
+    "s4_alt": "七篇文稿都带绿色对勾；选中的那篇提供“查看”和“在 WordPress 中编辑”。",
 
     "blk_eyebrow": "送达的内容",
     "blk_h": '真正的区块。<span class="hl">不是一整坨。</span>',
@@ -43,7 +43,7 @@ T = {
     "img_3_t": "裁剪每张图片", "img_3_p": "16:9、3:2、4:3、1:1、4:5、2:3 或 9:16。在取景框下移动图片，双指缩放，所选范围以完整尺寸送达。",
     "img_4_t": "角落里的署名", "img_4_p": "在每张上传图片的右下角加上“© 名字”，沿底边或沿右边向上，白色或黑色，字号自选，实时预览。",
     "img_5_t": "特色图片，自动找到", "img_5_p": "在 front matter 中指定，或把同名图片放在文件旁边：lisbon.md → lisbon.jpg。也可以自己选择文件或照片。",
-    "img_alt": "iPhone 上的裁剪编辑器：一张风景图，角落带有“© Maria Santos”署名，下方是 原图、16:9、3:2、4:3、1:1 和 4:5 的选项。",
+    "img_alt": "iPhone 上的裁剪编辑器：一张风景图，角落带有“© Maria Santos”署名，下方是 原始、16:9、3:2、4:3、1:1 和 4:5 的选项。",
 
     "sch_eyebrow": "定时发布",
     "sch_h": '今天上传。<span class="hl">整月陆续上线。</span>',
@@ -51,7 +51,7 @@ T = {
     "sch_1_t": "草稿、立即或定时", "sch_1_p": "草稿是默认设置，从不公开显示。立即发布在上传后即刻上线。定时为每篇文稿设定日期和时间。",
     "sch_2_t": "整批错开时间", "sch_2_p": "“第一篇在”某个日期，“之后每隔”一小时、三小时、一天、两天或一周。五十篇文稿变成一份编辑日程；单篇的日期之后仍可修改。",
     "sch_3_t": "你的时间，你的时钟", "sch_3_p": "时间以你的设备显示为准，与网站设置的时区无关。文件 front matter 中的未来日期会定时发布；过去的日期会回溯日期。",
-    "sch_alt": "iPhone 上设为定时的文稿，带有“Goes live on”字段和日期选择器。",
+    "sch_alt": "iPhone 上设为“定时”的文稿，“发布时间”字段带日期和时间。",
 
     "meta_eyebrow": "元数据与搜索引擎",
     "meta_h": '文章需要的一切。<span class="hl">从你的网站读取。</span>',
@@ -60,13 +60,13 @@ T = {
     "meta_2_t": "适配你所用插件的 SEO 字段", "meta_2_p": "Yoast SEO、Rank Math、SEOPress 和 Jetpack 的 SEO 标题、元描述和焦点关键词，附带搜索结果可显示长度的计数器。在 App 中或 front matter 中设置。",
     "meta_3_t": "作者、评论、置顶", "meta_3_p": "固定链接别名、摘要，若账户可代他人发布则可选作者，是否开放评论，以及文章是否置顶。",
     "meta_4_t": "网站自身的字段", "meta_4_p": "插件或主题向 App 开放的字段，如副标题、社交网络分享文案，会自动出现，并用通俗的语言说明。",
-    "meta_alt": "Mac 上的分类选择器：网站的分类及其数量，新分类“Portugal”已勾选，顶部有搜索框。",
+    "meta_alt": "Mac 上的分类选择器：网站的分类及其数量，新分类“葡萄牙”已勾选，顶部有搜索框。",
 
     "dev_eyebrow": "一个 App，三种设备",
     "dev_h": '在书桌前。<span class="hl">或在沙发上。</span>',
     "dev_lede": "iPhone、iPad 和 Mac 上是同一个 App，一次购买三处可用。从文件所在的任何地方上传：iCloud 云盘、“文件”App 或 Mac 上的文件夹。",
     "ipad_alt": "iPad 上的 Hybrid AutoPress：七篇文稿全部上传，选中的文章已存为草稿。",
-    "iphone_alt": "iPhone 上的 Hybrid AutoPress：文稿列表和“Upload 7 Documents”按钮。",
+    "iphone_alt": "iPhone 上的 Hybrid AutoPress：文稿列表和“上传 7 篇文稿”按钮。",
 
     "fm_eyebrow": "Front matter",
     "fm_h": '顶部加几行。<span class="hl">如果你愿意。</span>',

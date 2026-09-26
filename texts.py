@@ -136,7 +136,7 @@ T["de"] = {
     "hero_lede": "Hybrid AutoPress lädt viele Markdown-Dateien auf einmal zu WordPress hoch. Aus jeder Datei wird ein Beitrag oder eine Seite, mit Überschriften, Links, Listen, Tabellen und Bildern, als Entwurf gespeichert, sofort veröffentlicht oder für später geplant.",
     "soon": "Bald im App Store",
     "hero_more": "So funktioniert es",
-    "hero_alt": "Hybrid AutoPress auf dem Mac: sieben Markdown-Dokumente in der Liste, der Beitrag „Lisbon in Three Days“ mit Beitragsbild, Bildnachweis, Alt-Text, Permalink, Auszug und Kategorien.",
+    "hero_alt": "Hybrid AutoPress auf dem Mac: sieben Markdown-Dokumente in der Liste, der Beitrag „Lissabon in drei Tagen“ mit Beitragsbild, Bildnachweis, Alt-Text, Permalink, Auszug und Kategorien.",
 
     "step": "Schritt",
     "s1_h": "Dateien hinzufügen. Oder gleich den Ordner.",
@@ -150,7 +150,7 @@ T["de"] = {
     "s3_alt": "Ein laufender Upload: drei von sieben Dokumenten sind fertig, eines wird in WordPress angelegt, die übrigen warten.",
     "s4_h": "Fertig. Mit Link zurück.",
     "s4_p": "Jedes fertige Dokument bekommt einen grünen Haken und einen Link zur Ansicht auf der Website oder zum Weiterbearbeiten in WordPress. Geht etwas schief, sagt AutoPress, woran es liegt und was hilft, und sendet das Dokument beim nächsten Mal erneut.",
-    "s4_alt": "Alle sieben Dokumente tragen einen grünen Haken; das ausgewählte bietet „View“ und „Edit in WordPress“.",
+    "s4_alt": "Alle sieben Dokumente tragen einen grünen Haken; das ausgewählte bietet „Ansehen“ und „In WordPress bearbeiten“.",
 
     "blk_eyebrow": "Was ankommt",
     "blk_h": 'Echte Blöcke. <span class="hl">Kein Klumpen.</span>',
@@ -176,7 +176,7 @@ T["de"] = {
     "sch_1_t": "Entwurf, sofort oder geplant", "sch_1_p": "Entwurf ist der Standard und zeigt nie etwas. Sofort veröffentlichen geht online, sobald es hochgeladen ist. Planen setzt für jedes Dokument Datum und Uhrzeit.",
     "sch_2_t": "Einen ganzen Stapel staffeln", "sch_2_p": "„Das erste am“ Datum, „danach alle“ Stunde, drei Stunden, Tag, zwei Tage oder Woche. Aus fünfzig Dokumenten wird ein Redaktionsplan; einzelne Termine lassen sich danach noch ändern.",
     "sch_3_t": "Deine Zeit, deine Uhr", "sch_3_p": "Es gilt die Uhrzeit, die dein Gerät anzeigt, egal, auf welche Zeitzone die Website eingestellt ist. Ein künftiges Datum im Front Matter plant das Dokument; ein vergangenes datiert es zurück.",
-    "sch_alt": "Ein Dokument auf dem iPhone mit Status „Scheduled“, dem Feld „Goes live on“ und einer Datumsauswahl.",
+    "sch_alt": "Ein Dokument auf dem iPhone mit Status „Geplant“ und dem Feld „Erscheint am“ mit Datum und Uhrzeit.",
 
     "meta_eyebrow": "Metadaten und Suchmaschinen",
     "meta_h": 'Alles, was der Beitrag braucht. <span class="hl">Von deiner Website gelesen.</span>',
@@ -191,7 +191,7 @@ T["de"] = {
     "dev_h": 'Am Schreibtisch. <span class="hl">Oder auf dem Sofa.</span>',
     "dev_lede": "Dieselbe App auf iPhone, iPad und Mac, ein Kauf für alle drei. Lade von dort hoch, wo deine Dateien liegen: iCloud Drive, die Dateien-App oder ein Ordner auf dem Mac.",
     "ipad_alt": "Hybrid AutoPress auf dem iPad: alle sieben Dokumente hochgeladen, der ausgewählte Beitrag als Entwurf gesichert.",
-    "iphone_alt": "Hybrid AutoPress auf dem iPhone: die Dokumentliste mit der Taste „Upload 7 Documents“.",
+    "iphone_alt": "Hybrid AutoPress auf dem iPhone: die Dokumentliste mit der Taste „7 Dokumente hochladen“.",
 
     "fm_eyebrow": "Front Matter",
     "fm_h": 'Ein paar Zeilen obendrauf. <span class="hl">Wenn du magst.</span>',

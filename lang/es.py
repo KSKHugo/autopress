@@ -11,7 +11,7 @@ T = {
     "hero_lede": "Hybrid AutoPress sube muchos archivos Markdown a WordPress de una vez. Cada archivo se convierte en una entrada o una página, con títulos, enlaces, listas, tablas e imágenes, guardada como borrador, publicada al instante o programada para más tarde.",
     "soon": "Próximamente en el App Store",
     "hero_more": "Ver cómo funciona",
-    "hero_alt": "Hybrid AutoPress en el Mac: siete documentos Markdown en la lista, la entrada «Lisbon in Three Days» con su imagen destacada, crédito, texto alternativo, slug, extracto y categorías.",
+    "hero_alt": "Hybrid AutoPress en el Mac: siete documentos Markdown en la lista, la entrada «Lisboa en tres días» con su imagen destacada, crédito, texto alternativo, slug, extracto y categorías.",
 
     "step": "Paso",
     "s1_h": "Añade archivos. O una carpeta entera.",
@@ -25,7 +25,7 @@ T = {
     "s3_alt": "Una subida en curso: tres de siete documentos listos, uno creándose en WordPress, el resto en espera.",
     "s4_h": "Listo. Con un enlace de vuelta.",
     "s4_p": "Cada documento terminado recibe una marca verde y un enlace para verlo en el sitio o seguir editándolo en WordPress. Si algo falla, AutoPress dice por qué y qué hacer, y vuelve a enviar el documento la próxima vez.",
-    "s4_alt": "Los siete documentos llevan una marca verde; el seleccionado ofrece «View» y «Edit in WordPress».",
+    "s4_alt": "Los siete documentos llevan una marca verde; el seleccionado ofrece «Ver» y «Editar en WordPress».",
 
     "blk_eyebrow": "Lo que llega",
     "blk_h": 'Bloques de verdad. <span class="hl">No un pegote.</span>',
@@ -51,7 +51,7 @@ T = {
     "sch_1_t": "Borrador, ahora o programado", "sch_1_p": "Borrador es lo predeterminado y nunca muestra nada. Publicar ahora sale en cuanto se sube. Programar fija fecha y hora para cada documento.",
     "sch_2_t": "Escalona un lote entero", "sch_2_p": "«El primero el» tal fecha, «después cada» hora, tres horas, día, dos días o semana. Cincuenta documentos se convierten en un calendario editorial; cada fecha se puede cambiar después.",
     "sch_3_t": "Tu hora, tu reloj", "sch_3_p": "La hora es la que muestra tu dispositivo, sea cual sea la zona horaria del sitio. Una fecha futura en el front matter programa el archivo; una pasada lo retrodata.",
-    "sch_alt": "Un documento en el iPhone en Programado con el campo «Goes live on» y un selector de fecha.",
+    "sch_alt": "Un documento en el iPhone en «Programado» con el campo «Se publica el», fecha y hora.",
 
     "meta_eyebrow": "Metadatos y buscadores",
     "meta_h": 'Todo lo que necesita la entrada. <span class="hl">Leído de tu sitio.</span>',
@@ -66,7 +66,7 @@ T = {
     "dev_h": 'En el escritorio. <span class="hl">O en el sofá.</span>',
     "dev_lede": "La misma app en iPhone, iPad y Mac, una compra para los tres. Sube desde donde estén tus archivos: iCloud Drive, la app Archivos o una carpeta de tu Mac.",
     "ipad_alt": "Hybrid AutoPress en el iPad: los siete documentos subidos, la entrada seleccionada guardada como borrador.",
-    "iphone_alt": "Hybrid AutoPress en el iPhone: la lista de documentos con el botón «Upload 7 Documents».",
+    "iphone_alt": "Hybrid AutoPress en el iPhone: la lista de documentos con el botón «Subir 7 documentos».",
 
     "fm_eyebrow": "Front matter",
     "fm_h": 'Unas líneas encima. <span class="hl">Si quieres.</span>',

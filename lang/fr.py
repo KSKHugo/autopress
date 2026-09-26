@@ -11,7 +11,7 @@ T = {
     "hero_lede": "Hybrid AutoPress envoie plusieurs fichiers Markdown vers WordPress d'un seul coup. Chaque fichier devient un article ou une page, avec titres, liens, listes, tableaux et images, enregistré en brouillon, publié immédiatement ou planifié pour plus tard.",
     "soon": "Bientôt sur l'App Store",
     "hero_more": "Voir comment ça marche",
-    "hero_alt": "Hybrid AutoPress sur Mac : sept documents Markdown dans la liste, l'article « Lisbon in Three Days » avec son image mise en avant, son crédit, son texte alternatif, son slug, son extrait et ses catégories.",
+    "hero_alt": "Hybrid AutoPress sur Mac : sept documents Markdown dans la liste, l'article « Lisbonne en trois jours » avec son image mise en avant, son crédit, son texte alternatif, son slug, son extrait et ses catégories.",
 
     "step": "Étape",
     "s1_h": "Ajoutez des fichiers. Ou un dossier entier.",
@@ -25,7 +25,7 @@ T = {
     "s3_alt": "Un envoi en cours : trois documents sur sept sont terminés, un est en cours de création dans WordPress, les autres attendent.",
     "s4_h": "Terminé. Avec un lien retour.",
     "s4_p": "Chaque document terminé reçoit une coche verte et un lien pour le voir sur le site ou continuer dans WordPress. Si quelque chose échoue, AutoPress dit pourquoi et quoi faire, et renvoie le document la prochaine fois.",
-    "s4_alt": "Les sept documents portent une coche verte ; celui qui est sélectionné propose « View » et « Edit in WordPress ».",
+    "s4_alt": "Les sept documents portent une coche verte ; celui qui est sélectionné propose « Afficher » et « Modifier dans WordPress ».",
 
     "blk_eyebrow": "Ce qui arrive",
     "blk_h": 'De vrais blocs. <span class="hl">Pas un bloc informe.</span>',
@@ -51,7 +51,7 @@ T = {
     "sch_1_t": "Brouillon, maintenant ou planifié", "sch_1_p": "Brouillon est le réglage par défaut et ne montre jamais rien. Publier maintenant met en ligne dès l'envoi. Planifier fixe une date et une heure pour chaque document.",
     "sch_2_t": "Échelonnez un lot entier", "sch_2_p": "« Le premier le » telle date, « puis tous les » heure, trois heures, jour, deux jours ou semaine. Cinquante documents deviennent un calendrier éditorial ; chaque date reste modifiable ensuite.",
     "sch_3_t": "Votre heure, votre horloge", "sch_3_p": "L'heure est celle qu'affiche votre appareil, quel que soit le fuseau horaire du site. Une date à venir dans le front matter d'un fichier le planifie ; une date passée l'antidate.",
-    "sch_alt": "Un document sur iPhone réglé sur Planifié avec le champ « Goes live on » et un sélecteur de date.",
+    "sch_alt": "Un document sur iPhone réglé sur « Planifié » avec le champ « Mise en ligne le », date et heure.",
 
     "meta_eyebrow": "Métadonnées et moteurs de recherche",
     "meta_h": 'Tout ce qu\'il faut à l\'article. <span class="hl">Lu sur votre site.</span>',
@@ -66,7 +66,7 @@ T = {
     "dev_h": 'Au bureau. <span class="hl">Ou sur le canapé.</span>',
     "dev_lede": "La même app sur iPhone, iPad et Mac, un seul achat pour les trois. Envoyez depuis là où sont vos fichiers : iCloud Drive, l'app Fichiers ou un dossier de votre Mac.",
     "ipad_alt": "Hybrid AutoPress sur iPad : les sept documents envoyés, l'article sélectionné enregistré en brouillon.",
-    "iphone_alt": "Hybrid AutoPress sur iPhone : la liste des documents avec le bouton « Upload 7 Documents ».",
+    "iphone_alt": "Hybrid AutoPress sur iPhone : la liste des documents avec le bouton « Envoyer 7 documents ».",
 
     "fm_eyebrow": "Front matter",
     "fm_h": 'Quelques lignes en tête. <span class="hl">Si vous voulez.</span>',

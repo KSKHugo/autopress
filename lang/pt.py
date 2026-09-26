@@ -11,7 +11,7 @@ T = {
     "hero_lede": "O Hybrid AutoPress envia muitos ficheiros Markdown para o WordPress de uma só vez. Cada ficheiro torna-se um artigo ou uma página, com títulos, ligações, listas, tabelas e imagens, guardado como rascunho, publicado de imediato ou agendado para mais tarde.",
     "soon": "Brevemente na App Store",
     "hero_more": "Ver como funciona",
-    "hero_alt": "Hybrid AutoPress no Mac: sete documentos Markdown na lista, o artigo «Lisbon in Three Days» com imagem de destaque, crédito, texto alternativo, slug, resumo e categorias.",
+    "hero_alt": "Hybrid AutoPress no Mac: sete documentos Markdown na lista, o artigo «Lisboa em três dias» com imagem de destaque, crédito, texto alternativo, slug, resumo e categorias.",
 
     "step": "Passo",
     "s1_h": "Adicione ficheiros. Ou uma pasta inteira.",
@@ -25,7 +25,7 @@ T = {
     "s3_alt": "Um envio em curso: três de sete documentos prontos, um a ser criado no WordPress, os restantes à espera.",
     "s4_h": "Feito. Com uma ligação de volta.",
     "s4_p": "Cada documento terminado recebe um visto verde e uma ligação para o ver no site ou continuar a editar no WordPress. Se algo falhar, o AutoPress diz porquê e o que fazer, e envia o documento de novo da próxima vez.",
-    "s4_alt": "Os sete documentos têm um visto verde; o selecionado oferece «View» e «Edit in WordPress».",
+    "s4_alt": "Os sete documentos têm um visto verde; o selecionado oferece «Ver» e «Editar no WordPress».",
 
     "blk_eyebrow": "O que chega",
     "blk_h": 'Blocos a sério. <span class="hl">Não um bloco único.</span>',
@@ -51,7 +51,7 @@ T = {
     "sch_1_t": "Rascunho, agora ou agendado", "sch_1_p": "Rascunho é a predefinição e nunca mostra nada. Publicar agora fica público assim que é enviado. Agendar define data e hora para cada documento.",
     "sch_2_t": "Escalone um lote inteiro", "sch_2_p": "«O primeiro em» tal data, «depois a cada» hora, três horas, dia, dois dias ou semana. Cinquenta documentos tornam-se um calendário editorial; cada data pode ainda ser alterada depois.",
     "sch_3_t": "A sua hora, o seu relógio", "sch_3_p": "A hora é a que o seu dispositivo mostra, seja qual for o fuso horário do site. Uma data futura no front matter de um ficheiro agenda-o; uma passada retrodata-o.",
-    "sch_alt": "Um documento no iPhone em Agendado com o campo «Goes live on» e um seletor de data.",
+    "sch_alt": "Um documento no iPhone em «Agendado» com o campo «Fica online em», data e hora.",
 
     "meta_eyebrow": "Metadados e motores de busca",
     "meta_h": 'Tudo o que o artigo precisa. <span class="hl">Lido do seu site.</span>',
@@ -66,7 +66,7 @@ T = {
     "dev_h": 'À secretária. <span class="hl">Ou no sofá.</span>',
     "dev_lede": "A mesma app no iPhone, no iPad e no Mac, uma compra para os três. Envie de onde estiverem os seus ficheiros: iCloud Drive, a app Ficheiros ou uma pasta no Mac.",
     "ipad_alt": "Hybrid AutoPress no iPad: os sete documentos enviados, o artigo selecionado guardado como rascunho.",
-    "iphone_alt": "Hybrid AutoPress no iPhone: a lista de documentos com o botão «Upload 7 Documents».",
+    "iphone_alt": "Hybrid AutoPress no iPhone: a lista de documentos com o botão «Enviar 7 documentos».",
 
     "fm_eyebrow": "Front matter",
     "fm_h": 'Umas linhas no topo. <span class="hl">Se quiser.</span>',

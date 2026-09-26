@@ -11,7 +11,7 @@ T = {
     "hero_lede": "Hybrid AutoPress uploadt veel Markdown-bestanden in één keer naar WordPress. Elk bestand wordt een bericht of een pagina, met koppen, links, lijsten, tabellen en afbeeldingen, opgeslagen als concept, meteen gepubliceerd of ingepland voor later.",
     "soon": "Binnenkort in de App Store",
     "hero_more": "Bekijk hoe het werkt",
-    "hero_alt": "Hybrid AutoPress op de Mac: zeven Markdown-documenten in de lijst, het bericht ‘Lisbon in Three Days’ met uitgelichte afbeelding, naamsvermelding, alt-tekst, slug, samenvatting en categorieën.",
+    "hero_alt": "Hybrid AutoPress op de Mac: zeven Markdown-documenten in de lijst, het bericht ‘Lissabon in drie dagen’ met uitgelichte afbeelding, naamsvermelding, alt-tekst, slug, samenvatting en categorieën.",
 
     "step": "Stap",
     "s1_h": "Voeg bestanden toe. Of een hele map.",
@@ -25,7 +25,7 @@ T = {
     "s3_alt": "Een upload bezig: drie van zeven documenten klaar, één wordt in WordPress aangemaakt, de rest wacht.",
     "s4_h": "Klaar. Met een link terug.",
     "s4_p": "Elk afgerond document krijgt een groen vinkje en een link om het op de site te bekijken of verder te bewerken in WordPress. Gaat iets mis, dan zegt AutoPress waarom en wat te doen, en stuurt het document de volgende keer opnieuw.",
-    "s4_alt": "Alle zeven documenten hebben een groen vinkje; het geselecteerde biedt ‘View’ en ‘Edit in WordPress’.",
+    "s4_alt": "Alle zeven documenten hebben een groen vinkje; het geselecteerde biedt ‘Bekijk’ en ‘Bewerk in WordPress’.",
 
     "blk_eyebrow": "Wat er aankomt",
     "blk_h": 'Echte blokken. <span class="hl">Geen klont.</span>',
@@ -51,7 +51,7 @@ T = {
     "sch_1_t": "Concept, nu of ingepland", "sch_1_p": "Concept is de standaard en laat nooit iets zien. Nu publiceren gaat online zodra het geüpload is. Inplannen zet voor elk document een datum en tijd.",
     "sch_2_t": "Spreid een hele reeks", "sch_2_p": "‘Het eerste op’ een datum, ‘daarna elke’ uur, drie uur, dag, twee dagen of week. Vijftig documenten worden een redactiekalender; losse datums kun je daarna nog wijzigen.",
     "sch_3_t": "Jouw tijd, jouw klok", "sch_3_p": "De tijd is die van je apparaat, welke tijdzone de website ook heeft. Een toekomstige datum in de front matter van een bestand plant het in; een verstreken datum dateert het terug.",
-    "sch_alt": "Een document op de iPhone op Ingepland met het veld ‘Goes live on’ en een datumkiezer.",
+    "sch_alt": "Een document op de iPhone op ‘Ingepland’ met het veld ‘Gaat online op’, datum en tijd.",
 
     "meta_eyebrow": "Metadata en zoekmachines",
     "meta_h": 'Alles wat het bericht nodig heeft. <span class="hl">Gelezen van je site.</span>',
@@ -66,7 +66,7 @@ T = {
     "dev_h": 'Aan je bureau. <span class="hl">Of op de bank.</span>',
     "dev_lede": "Dezelfde app op iPhone, iPad en Mac, één aankoop voor alle drie. Upload vanaf waar je bestanden staan: iCloud Drive, de Bestanden-app of een map op je Mac.",
     "ipad_alt": "Hybrid AutoPress op de iPad: alle zeven documenten geüpload, het geselecteerde bericht opgeslagen als concept.",
-    "iphone_alt": "Hybrid AutoPress op de iPhone: de documentenlijst met de knop ‘Upload 7 Documents’.",
+    "iphone_alt": "Hybrid AutoPress op de iPhone: de documentenlijst met de knop ‘7 documenten uploaden’.",
 
     "fm_eyebrow": "Front matter",
     "fm_h": 'Een paar regels erboven. <span class="hl">Als je wilt.</span>',

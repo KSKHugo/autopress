@@ -441,4 +441,4 @@ footer a:hover { text-decoration: underline; }
   .plans { font-size: 15px; }
   .plans th, .plans td { padding-left: 8px; padding-right: 8px; }
 }
-.win--sheet { width: min(520px, 100%); margin: 0 auto; border-radius: 12px; }
+.win--sheet { width: min(560px, 100%); margin: 0 auto; border-radius: 12px; }

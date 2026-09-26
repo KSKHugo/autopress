@@ -66,7 +66,7 @@ PRIVACY_FOLDERS = {c: f"datenschutz-app/{c}/" for c, _, _, _ in LANGUAGES}
 
 def build_page(code, path, name):
     root = "../" * path.count("/")
-    values = dict(T[code], lang=code, root=root, site=SITE, canonical=SITE + path, lang_name=name,
+    values = dict(T[code], lang=code, root=root, site=SITE, shots=f"{root}assets/img/{code}/", canonical=SITE + path, lang_name=name,
                   lang_menu=menu(root, PAGE_FOLDERS, code), lang_list=menu(root, PAGE_FOLDERS, code),
                   hreflangs=hreflangs("", PAGE_FOLDERS))
     render((HERE / "template.html").read_text(encoding="utf-8"), values, HERE / path / "index.html")

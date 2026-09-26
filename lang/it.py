@@ -11,7 +11,7 @@ T = {
     "hero_lede": "Hybrid AutoPress carica molti file Markdown su WordPress in un colpo solo. Ogni file diventa un articolo o una pagina, con titoli, link, elenchi, tabelle e immagini, salvato come bozza, pubblicato subito o programmato per dopo.",
     "soon": "Presto sull'App Store",
     "hero_more": "Guarda come funziona",
-    "hero_alt": "Hybrid AutoPress sul Mac: sette documenti Markdown nell'elenco, l'articolo “Lisbon in Three Days” con immagine in evidenza, credito, testo alternativo, slug, riassunto e categorie.",
+    "hero_alt": "Hybrid AutoPress sul Mac: sette documenti Markdown nell'elenco, l'articolo “Lisbona in tre giorni” con immagine in evidenza, credito, testo alternativo, slug, riassunto e categorie.",
 
     "step": "Passo",
     "s1_h": "Aggiungi file. O un'intera cartella.",
@@ -25,7 +25,7 @@ T = {
     "s3_alt": "Un caricamento in corso: tre documenti su sette sono pronti, uno viene creato in WordPress, gli altri aspettano.",
     "s4_h": "Fatto. Con un link indietro.",
     "s4_p": "Ogni documento finito riceve un segno di spunta verde e un link per vederlo sul sito o continuare in WordPress. Se qualcosa fallisce, AutoPress dice perché e cosa fare, e rimanda il documento la volta successiva.",
-    "s4_alt": "Tutti e sette i documenti hanno un segno di spunta verde; quello selezionato offre “View” e “Edit in WordPress”.",
+    "s4_alt": "Tutti e sette i documenti hanno un segno di spunta verde; quello selezionato offre “Mostra” e “Modifica in WordPress”.",
 
     "blk_eyebrow": "Cosa arriva",
     "blk_h": 'Blocchi veri. <span class="hl">Non un blocco unico.</span>',
@@ -51,7 +51,7 @@ T = {
     "sch_1_t": "Bozza, subito o programmato", "sch_1_p": "Bozza è il valore predefinito e non mostra mai nulla. Pubblica subito va online appena caricato. Programma fissa data e ora per ogni documento.",
     "sch_2_t": "Scagliona un intero lotto", "sch_2_p": "“Il primo il” tale data, “poi ogni” ora, tre ore, giorno, due giorni o settimana. Cinquanta documenti diventano un calendario editoriale; le singole date si possono ancora cambiare dopo.",
     "sch_3_t": "La tua ora, il tuo orologio", "sch_3_p": "L'ora è quella mostrata dal tuo dispositivo, qualunque sia il fuso orario del sito. Una data futura nel front matter di un file lo programma; una passata lo retrodata.",
-    "sch_alt": "Un documento sull'iPhone impostato su Programmato con il campo “Goes live on” e un selettore di data.",
+    "sch_alt": "Un documento sull'iPhone impostato su “Programmato” con il campo “Online il”, data e ora.",
 
     "meta_eyebrow": "Metadati e motori di ricerca",
     "meta_h": 'Tutto ciò che serve all\'articolo. <span class="hl">Letto dal tuo sito.</span>',
@@ -60,13 +60,13 @@ T = {
     "meta_2_t": "Campi SEO per il plugin che hai", "meta_2_p": "Titolo SEO, meta descrizione e frase chiave per Yoast SEO, Rank Math, SEOPress e Jetpack, con contatori per lo spazio dei risultati di ricerca. Nell'app o nel front matter.",
     "meta_3_t": "Autore, commenti, in evidenza", "meta_3_p": "Slug del permalink, riassunto, l'autore se il tuo account può pubblicare per altri, se i commenti sono aperti e se l'articolo resta in cima al blog.",
     "meta_4_t": "I campi propri del sito", "meta_4_p": "I campi che plugin o tema hanno aperto alle app, un sottotitolo, un messaggio per i social, compaiono da soli, spiegati in parole semplici.",
-    "meta_alt": "Il selettore di categorie sul Mac: le categorie del sito con i loro conteggi, la nuova categoria “Portugal” spuntata, un campo di ricerca in alto.",
+    "meta_alt": "Il selettore di categorie sul Mac: le categorie del sito con i loro conteggi, la nuova categoria “Portogallo” spuntata, un campo di ricerca in alto.",
 
     "dev_eyebrow": "Un'app, tre dispositivi",
     "dev_h": 'Alla scrivania. <span class="hl">O sul divano.</span>',
     "dev_lede": "La stessa app su iPhone, iPad e Mac, un solo acquisto per tutti e tre. Carica da dove sono i tuoi file: iCloud Drive, l'app File o una cartella del Mac.",
     "ipad_alt": "Hybrid AutoPress sull'iPad: tutti e sette i documenti caricati, l'articolo selezionato salvato come bozza.",
-    "iphone_alt": "Hybrid AutoPress sull'iPhone: l'elenco dei documenti con il pulsante “Upload 7 Documents”.",
+    "iphone_alt": "Hybrid AutoPress sull'iPhone: l'elenco dei documenti con il pulsante “Carica 7 documenti”.",
 
     "fm_eyebrow": "Front matter",
     "fm_h": 'Poche righe in cima. <span class="hl">Se vuoi.</span>',

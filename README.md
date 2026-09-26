@@ -18,9 +18,10 @@ privacy.py, lang/*.py  the words of the app's privacy policy (German is the bind
 build.py               writes index.html, <lang>/index.html, datenschutz-app/<lang>/index.html and sitemap.xml
 assets/style.css       design: navy #1A3A5E / #254E7A and amber #F59E0B from the app icon
 assets/site.js         reveal on scroll, the pinned walkthrough, the hero zoom
-assets/img/            app icon and screenshots (Mac, iPad, iPhone)
+assets/img/            app icon; assets/img/<lang>/ the screenshots (Mac, iPad, iPhone) in that language
 impressum/             the legal notice (German law), a static page in the same design
 datenschutz/           the privacy policy for the website, likewise static
+tools/screenshots/     how the screenshots are made: sample content, WordPress mock, Mac and simulator scripts
 serve.js               tiny static server for a local preview: node serve.js
 ```
 
@@ -41,13 +42,17 @@ On small screens and with “reduce motion” the page falls back to a plain, li
 
 ## Screenshots
 
+Every language has its own set in `assets/img/<lang>/`: the app in that language, with the sample
+content (“Coastline Journal”) translated too, and dates in that locale. English is `en/`.
+
 | Mac | iPad | iPhone |
 |---|---|---|
-| ![Mac](assets/img/mac-main.png) | ![iPad](assets/img/ipad-main.jpg) | ![iPhone](assets/img/iphone-done.jpg) |
+| ![Mac](assets/img/en/mac-main.png) | ![iPad](assets/img/en/ipad-done.jpg) | ![iPhone](assets/img/en/iphone-list.jpg) |
 
-Taken from debug builds of the app with its demo launch arguments (`-demoFolder`, `-demoSite`,
-`-demoSelect`, `-demoUpload`) against the mock WordPress from the app repository; sheets and
-windows beyond that were opened by UI scripting on the Mac and by taps in the simulators. The content
-(“Coastline Journal”) is sample content; the pictures in it are drawn by a script.
+Made with `tools/screenshots/`: `setup.sh` prepares a work folder with the sample content in all nine
+languages and a WordPress mock with matching categories and tags; `mac.sh <lang>` drives a Debug build
+on the Mac by UI scripting (only its own instance, found by PID); `ios.sh <lang> <step>` does the same in
+the iPhone and iPad simulators, with two taps by hand. The content (“Coastline Journal”) is sample
+content; its pictures are drawn by `draw.swift`.
 
 © 2026 Pascal Hugo
