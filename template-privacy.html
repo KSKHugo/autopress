@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<meta name="theme-color" content="#1a3a5e">
+<link rel="canonical" href="{{canonical}}">
+{{hreflangs}}
+<link rel="icon" type="image/png" href="{{root}}assets/img/favicon.png">
+<link rel="apple-touch-icon" href="{{root}}assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="{{root}}assets/style.css">
+</head>
+<body class="legal-page">
+<a class="skip" href="#main">{{skip}}</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="{{home}}" aria-label="Hybrid AutoPress">
+      <img src="{{root}}assets/img/favicon.png" alt="" width="30" height="30">
+      <span>Hybrid AutoPress</span>
+    </a>
+    <nav class="nav__links" aria-label="Page">
+      <a href="{{home}}">{{nav_home}}</a>
+      <details class="langmenu">
+        <summary class="lang" aria-label="{{lang_menu_label}}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          {{lang_name}}
+        </summary>
+        <ul>{{lang_menu}}</ul>
+      </details>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="legal-hero panel--navy">
+    <div class="wrap">
+      <p class="eyebrow">{{eyebrow}}</p>
+      <h1>{{h1}}</h1>
+      <p class="lede">{{lede}}</p>
+    </div>
+  </section>
+
+  <section class="legal">
+    <div class="wrap legal__grid">
+      <article class="legal__card legal__card--wide legal__card--note">
+        <p>{{note}}</p>
+      </article>
+
+      <article class="legal__card">
+        <h2>{{s1_h}}</h2>
+        <address>
+          Pascal Hugo<br>
+          Kropsburgstr. 5a<br>
+          76767 Hagenbach<br>
+          {{country}}<br>
+          {{email_label}} <a href="mailto:pascal@pascalhugo.de">pascal@pascalhugo.de</a>
+        </address>
+      </article>
+
+      <article class="legal__card">
+        <h2>{{s2_h}}</h2>
+        <p>{{s2_p}}</p>
+      </article>
+
+      <article class="legal__card legal__card--wide">
+        <h2>{{s3_h}}</h2>
+        <p>{{s3_p1}}</p>
+        <p>{{s3_p2}}</p>
+      </article>
+
+      <article class="legal__card legal__card--wide">
+        <h2>{{s4_h}}</h2>
+        <p>{{s4_p1}}</p>
+        <p>{{s4_p2}}</p>
+        <p>{{s4_p3}}</p>
+      </article>
+
+      <article class="legal__card">
+        <h2>{{s5_h}}</h2>
+        <p>{{s5_p}}</p>
+      </article>
+
+      <article class="legal__card">
+        <h2>{{s6_h}}</h2>
+        <p>{{s6_p}}</p>
+      </article>
+
+      <article class="legal__card legal__card--wide">
+        <h2>{{s7_h}}</h2>
+        <p>{{s7_p}}</p>
+      </article>
+
+      <article class="legal__card legal__card--wide">
+        <h2>{{s8_h}}</h2>
+        <p>{{s8_p}}</p>
+      </article>
+
+      <article class="legal__card legal__card--wide">
+        <h2>{{s9_h}}</h2>
+        <p>{{s9_p1}}</p>
+        <p>{{s9_p2}}</p>
+      </article>
+
+      <article class="legal__card legal__card--wide">
+        <h2>{{s10_h}}</h2>
+        <p>{{s10_p}}</p>
+      </article>
+
+      <p class="legal__back">
+        <a class="link" href="{{home}}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+          {{back}}</a>
+        <a class="link" href="{{root}}datenschutz/">{{website_policy}}
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav aria-label="Footer">
+      <a href="{{root}}impressum/">{{foot_imprint}}</a>
+      <a href="{{root}}datenschutz/">{{foot_privacy}}</a>
+      <a href="./" aria-current="page">{{foot_app_privacy}}</a>
+    </nav>
+    <p>© 2026 Pascal Hugo · Hybrid AutoPress</p>
+  </div>
+</footer>
+</body>
+</html>

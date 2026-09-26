@@ -4,15 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Hybrid AutoPress: Markdown to WordPress, many files at once</title>
-<meta name="description" content="Hybrid AutoPress uploads many Markdown files to WordPress in one go: as posts or pages, as drafts or published, images included. For iPhone, iPad and Mac.">
+<meta name="description" content="Hybrid AutoPress uploads many Markdown files to WordPress in one go: as posts or pages, as drafts, published or scheduled, with images, categories and SEO fields. For iPhone, iPad and Mac.">
 <meta name="theme-color" content="#1a3a5e">
 <link rel="canonical" href="https://hybrid-autopress.com/">
 <link rel="alternate" hreflang="en" href="https://hybrid-autopress.com/">
 <link rel="alternate" hreflang="de" href="https://hybrid-autopress.com/de/">
+<link rel="alternate" hreflang="fr" href="https://hybrid-autopress.com/fr/">
+<link rel="alternate" hreflang="es" href="https://hybrid-autopress.com/es/">
+<link rel="alternate" hreflang="it" href="https://hybrid-autopress.com/it/">
+<link rel="alternate" hreflang="pt" href="https://hybrid-autopress.com/pt/">
+<link rel="alternate" hreflang="nl" href="https://hybrid-autopress.com/nl/">
+<link rel="alternate" hreflang="ja" href="https://hybrid-autopress.com/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://hybrid-autopress.com/zh/">
 <link rel="alternate" hreflang="x-default" href="https://hybrid-autopress.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hybrid AutoPress: Markdown to WordPress, many files at once">
-<meta property="og:description" content="Hybrid AutoPress uploads many Markdown files to WordPress in one go: as posts or pages, as drafts or published, images included. For iPhone, iPad and Mac.">
+<meta property="og:description" content="Hybrid AutoPress uploads many Markdown files to WordPress in one go: as posts or pages, as drafts, published or scheduled, with images, categories and SEO fields. For iPhone, iPad and Mac.">
 <meta property="og:url" content="https://hybrid-autopress.com/">
 <meta property="og:image" content="https://hybrid-autopress.com/assets/img/icon-512.png">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
@@ -33,11 +40,14 @@
       <a href="#how">How it works</a>
       <a href="#images">Images</a>
       <a href="#sites">Your WordPress</a>
-      <a href="#benefits">Benefits</a>
-      <a class="lang" href="de/" hreflang="de" lang="de">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-        Deutsch
-      </a>
+      <a href="#pro">Pro</a>
+      <details class="langmenu">
+        <summary class="lang" aria-label="Language">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          English
+        </summary>
+        <ul><li><a href="" hreflang="en" lang="en" aria-current="page">English</a></li><li><a href="de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="es/" hreflang="es" lang="es">Español</a></li><li><a href="it/" hreflang="it" lang="it">Italiano</a></li><li><a href="pt/" hreflang="pt" lang="pt">Português</a></li><li><a href="nl/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="zh/" hreflang="zh-Hans" lang="zh">简体中文</a></li></ul>
+      </details>
     </nav>
   </div>
 </header>
@@ -47,10 +57,10 @@
 <!-- 1 · Hero -->
 <section class="panel panel--navy hero" id="top">
   <div class="wrap center">
-    <img class="hero__icon reveal" src="assets/img/icon-512.png" alt="" width="92" height="92">
+    <img class="hero__icon reveal" src="assets/img/icon-512.png" alt="" width="84" height="84">
     <p class="eyebrow reveal" style="--d:.05s">For iPhone, iPad and Mac</p>
     <h1 class="reveal" style="--d:.1s">A folder of Markdown in. <span class="hl">A WordPress site out.</span></h1>
-    <p class="lede reveal" style="--d:.18s">Hybrid AutoPress uploads many Markdown files to WordPress in one go. Every file becomes a post or a page, with headings, links, lists, tables and images, saved as a draft or published right away.</p>
+    <p class="lede reveal" style="--d:.18s">Hybrid AutoPress uploads many Markdown files to WordPress in one go. Every file becomes a post or a page, with headings, links, lists, tables and images, saved as a draft, published right away or scheduled for later.</p>
     <div class="actions reveal" style="--d:.26s">
       <span class="soon"><i aria-hidden="true"></i>Coming soon to the App Store</span>
       <a class="btn btn--ghost" href="#how">See how it works
@@ -59,7 +69,7 @@
     </div>
   </div>
   <div class="hero__stage reveal" style="--d:.34s">
-    <img class="hero__shot" src="assets/img/mac-main.png" alt="Hybrid AutoPress on the Mac: seven Markdown documents in the list, the post “Lisbon in Three Days” with its featured image, slug, excerpt, categories and tags." width="1700" height="1198" fetchpriority="high">
+    <img class="hero__shot" src="assets/img/mac-main.png" alt="Hybrid AutoPress on the Mac: seven Markdown documents in the list, the post “Lisbon in Three Days” with its featured image, credit, alt text, slug, excerpt and categories." width="1700" height="1198" fetchpriority="high">
   </div>
 </section>
 
@@ -70,32 +80,32 @@
       <article class="step" data-step="0">
         <p class="step__no">Step 1</p>
         <h2>Add files. Or a whole folder.</h2>
-        <p>Pick single files, choose a folder including its subfolders, or drag everything into the window. AutoPress reads each title from the front matter, the first heading or the file name.</p>
+        <p>Pick single files, choose a folder including its subfolders, or drag everything into the window. AutoPress reads each title from the front matter, the first heading or the file name, and finds the featured image by itself.</p>
         <img class="step__img" src="assets/img/mac-main.png" alt="The document list on the Mac with seven Markdown files, each marked as post or page." width="1700" height="1198" loading="lazy">
       </article>
       <article class="step" data-step="1">
         <p class="step__no">Step 2</p>
         <h2>Decide once. Adjust where needed.</h2>
-        <p>Post or page, draft or live: set it once for all documents and override it for any single one. Before anything is published immediately, AutoPress asks once.</p>
-        <img class="step__img" src="assets/img/mac-decide.png" alt="The post “Walking the Algarve Cliffs” is set to “Publish now”, while all other documents stay drafts." width="1700" height="1198" loading="lazy">
+        <p>Post or page; draft, publish now or schedule: set it once for all documents and override it for any single one. A whole batch can be staggered, the first one on a date, the rest a day apart. Before anything goes live at once, AutoPress asks once.</p>
+        <img class="step__img" src="assets/img/mac-schedule.png" alt="All documents set to Schedule, staggered one day apart, with the dates shown in the list." width="1700" height="1198" loading="lazy">
       </article>
       <article class="step" data-step="2">
         <p class="step__no">Step 3</p>
         <h2>Press upload. Watch it go.</h2>
-        <p>One document after the other is created in WordPress, its images first. A progress bar shows how far along you are, and you can stop at any time.</p>
-        <img class="step__img" src="assets/img/mac-uploading.png" alt="An upload in progress: two of seven documents are done, one is being created in WordPress, the rest are waiting." width="1700" height="1198" loading="lazy">
+        <p>One document after the other is created in WordPress, its pictures first. A progress bar shows how far along you are, and you can stop at any time; what is uploaded stays uploaded.</p>
+        <img class="step__img" src="assets/img/mac-uploading.png" alt="An upload in progress: three of seven documents are done, one is being created in WordPress, the rest are waiting." width="1700" height="1198" loading="lazy">
       </article>
       <article class="step" data-step="3">
         <p class="step__no">Step 4</p>
         <h2>Done. With a link back.</h2>
-        <p>Every finished document gets a green check mark and a link to view it on the site or to keep editing in WordPress. If something fails, AutoPress tells you why and what to do about it.</p>
+        <p>Every finished document gets a green check mark and a link to view it on the site or to keep editing in WordPress. If something fails, AutoPress tells you why and what to do about it, and sends the document again next time.</p>
         <img class="step__img" src="assets/img/mac-done.png" alt="All seven documents carry a green check mark; the selected one offers “View” and “Edit in WordPress”." width="1700" height="1198" loading="lazy">
       </article>
     </div>
     <div class="stage" aria-hidden="true">
       <div class="stage__frame">
         <img class="is-active" src="assets/img/mac-main.png" alt="" width="1700" height="1198" loading="lazy">
-        <img src="assets/img/mac-decide.png" alt="" width="1700" height="1198" loading="lazy">
+        <img src="assets/img/mac-schedule.png" alt="" width="1700" height="1198" loading="lazy">
         <img src="assets/img/mac-uploading.png" alt="" width="1700" height="1198" loading="lazy">
         <img src="assets/img/mac-done.png" alt="" width="1700" height="1198" loading="lazy">
         <div class="stage__dots"><i class="is-active"></i><i></i><i></i><i></i></div>
@@ -104,40 +114,160 @@
   </div>
 </section>
 
-<!-- 3 · Images -->
-<section class="panel panel--paper" id="images">
+<!-- 3 · Real blocks -->
+<section class="panel panel--paper" id="blocks">
   <div class="wrap split">
     <div>
-      <p class="eyebrow reveal">Images</p>
-      <h2 class="reveal" style="--d:.06s">Your pictures <span class="hl">come along.</span></h2>
-      <p class="lede reveal" style="--d:.12s">No more uploading images by hand and patching links. What lies next to your Markdown file arrives in WordPress with it.</p>
+      <p class="eyebrow reveal">What arrives</p>
+      <h2 class="reveal" style="--d:.06s">Real blocks. <span class="hl">Not a blob.</span></h2>
+      <p class="lede reveal" style="--d:.12s">Your Markdown arrives as blocks of the WordPress block editor, not as one big unbreakable chunk. Every heading, paragraph, list, quote, table and image is its own block that can be edited, moved or deleted on its own.</p>
       <ul class="ticks">
         <li class="reveal" style="--d:.18s">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
-          <span><strong>Into the media library</strong>Local images in the text are uploaded with their alt text and linked in the post. Each one goes up only once per site and session.</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+          <span><strong>Every element, its own block</strong>Headings of every level, paragraphs with bold, italic, code and links, ordered and nested lists, task lists, quotes, code blocks and separators.</span>
         </li>
         <li class="reveal" style="--d:.24s">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
-          <span><strong>Featured image, found automatically</strong>Name it in the front matter, or put a picture with the same name next to the file: lisbon.md → lisbon.jpg. Or pick a file or a photo.</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18"/><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M3 15h18"/></svg>
+          <span><strong>Tables and images, the real thing</strong>A Markdown table becomes a table block with its alignment. A picture becomes an image block with alt text and caption; a linked picture keeps its link.</span>
         </li>
         <li class="reveal" style="--d:.3s">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
-          <span><strong>HEIC and TIFF become JPEG</strong>Photos straight from the iPhone are converted on the way, so every browser can show them.</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
+          <span><strong>Made for text from AI tools</strong>Markdown from ChatGPT, Claude and the like arrives as is. A stray ** on its own line, a common slip in generated text, is repaired quietly, as in Hybrid.</span>
         </li>
       </ul>
     </div>
-    <div class="phone reveal" style="--d:.15s">
-      <img src="assets/img/iphone-detail.jpg" alt="Hybrid AutoPress on the iPhone: a post with its automatically found featured image, slug and excerpt." width="644" height="1400" loading="lazy">
+    <div class="flow reveal" style="--d:.15s" aria-hidden="true">
+      <pre class="code code--sm"><span class="h"># Lisbon in Three Days</span>
+
+Lisbon rewards people who <span class="k">*walk*</span>.
+
+![Alfama](images/alfama.jpg)
+
+| Stop | Time |
+|------|------|
+| Castelo | 2 h |
+
+- Pastéis de Belém
+- Jerónimos
+
+<span class="c">&gt; Bring a jacket.</span></pre>
+      <div class="flow__arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </div>
+      <ul class="blocks">
+        <li><i></i>Heading</li>
+        <li><i></i>Paragraph</li>
+        <li class="blocks__img"><i></i>Image</li>
+        <li><i></i>Table</li>
+        <li><i></i>List</li>
+        <li><i></i>Quote</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- 4 · Devices -->
+<!-- 4 · Images -->
+<section class="panel panel--paper2" id="images">
+  <div class="wrap split split--flip">
+    <div>
+      <p class="eyebrow reveal">Images</p>
+      <h2 class="reveal" style="--d:.06s">Your pictures <span class="hl">come along.</span></h2>
+      <p class="lede reveal" style="--d:.12s">No more uploading images by hand and patching links. What lies next to your Markdown file arrives in WordPress with it, at web size, cropped the way you want and with your name in the corner.</p>
+      <ul class="ticks">
+        <li class="reveal" style="--d:.18s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+          <span><strong>Into the media library</strong>Local images in the text are uploaded with their alt text and linked in the post. Each one only once per site and session, however many documents use it.</span>
+        </li>
+        <li class="reveal" style="--d:.22s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 9 15"/><path d="M12 3H3v18h18v-9"/><path d="M16 3h5v5"/></svg>
+          <span><strong>Web size, JPEG or WebP</strong>Scaled down before the upload, never up: 1200, 1600, 2000 or 2560 pixels on the long edge. HEIC photos from the iPhone are converted; transparency stays PNG.</span>
+        </li>
+        <li class="reveal" style="--d:.26s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2v14a2 2 0 0 0 2 2h14"/><path d="M18 22V8a2 2 0 0 0-2-2H2"/></svg>
+          <span><strong>Crop every picture</strong>16:9, 3:2, 4:3, 1:1, 4:5, 2:3 or 9:16. Move the picture under the frame, zoom with two fingers, and the chosen part arrives in full size.</span>
+        </li>
+        <li class="reveal" style="--d:.3s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M14.83 14.83a4 4 0 1 1 0-5.66"/></svg>
+          <span><strong>A credit in the corner</strong>“© Name” set into the lower right corner of every uploaded picture, along the bottom or up the edge, in white or black, in the size you choose, with a live preview.</span>
+        </li>
+        <li class="reveal" style="--d:.34s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
+          <span><strong>Featured image, found automatically</strong>Named in the front matter, or a picture with the same name next to the file: lisbon.md → lisbon.jpg. Or pick a file or a photo yourself.</span>
+        </li>
+      </ul>
+    </div>
+    <div class="phone reveal" style="--d:.15s">
+      <img src="assets/img/iphone-crop.jpg" alt="The crop editor on the iPhone: a landscape picture with the credit “© Maria Santos” in the corner and the shapes Original, 16:9, 3:2, 4:3, 1:1 and 4:5 below." width="644" height="1400" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- 5 · Scheduling -->
+<section class="panel panel--navy" id="schedule">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow reveal">Scheduling</p>
+      <h2 class="reveal" style="--d:.06s">Upload today. <span class="hl">Go live all month.</span></h2>
+      <p class="lede reveal" style="--d:.12s">Fifty documents do not have to appear on one day. Upload them now and let WordPress publish them by itself, at the times you choose.</p>
+      <ul class="ticks">
+        <li class="reveal" style="--d:.18s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+          <span><strong>Draft, now or scheduled</strong>Draft is the default and never shows anything. Publish now goes live as soon as it is uploaded. Schedule sets a date and time for each document.</span>
+        </li>
+        <li class="reveal" style="--d:.24s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/></svg>
+          <span><strong>Stagger a whole batch</strong>“First one on” a date, “then every” hour, three hours, day, two days or week. Fifty documents become an editorial calendar; single dates can still be changed afterwards.</span>
+        </li>
+        <li class="reveal" style="--d:.3s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <span><strong>Your time, your clock</strong>The time is the one your device shows, whatever time zone the website is set to. A future date in a file's front matter schedules it; a past one backdates it.</span>
+        </li>
+      </ul>
+    </div>
+    <div class="phone reveal" style="--d:.15s">
+      <img src="assets/img/iphone-schedule.jpg" alt="A document on the iPhone set to Scheduled with the field “Goes live on” and a date picker." width="644" height="1400" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- 6 · Metadata and SEO -->
+<section class="panel panel--paper" id="metadata">
+  <div class="wrap">
+    <div class="split split--wide">
+      <div>
+        <p class="eyebrow reveal">Metadata and search engines</p>
+        <h2 class="reveal" style="--d:.06s">Everything the post needs. <span class="hl">Read from your site.</span></h2>
+        <p class="lede reveal" style="--d:.12s">Nothing is tailored to one particular installation. AutoPress asks every website what it has, and shows exactly that.</p>
+      </div>
+      <ul class="ticks ticks--top">
+        <li class="reveal" style="--d:.18s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>
+          <span><strong>Categories and tags from your site</strong>Chosen from the site's own list, most used first, with a search for sites with thousands of tags. New ones are typed in and created when the document is uploaded. One choice can be applied to all documents.</span>
+        </li>
+        <li class="reveal" style="--d:.22s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <span><strong>SEO fields for the plugin you have</strong>SEO title, meta description and focus keyphrase for Yoast SEO, Rank Math, SEOPress and Jetpack, with counters for the room search results have. Set them in the app or in the front matter.</span>
+        </li>
+        <li class="reveal" style="--d:.26s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>
+          <span><strong>Author, comments, sticky</strong>Permalink slug, excerpt, the author if your account may publish for others, whether comments are open, and whether the post stays at the top of the blog.</span>
+        </li>
+        <li class="reveal" style="--d:.3s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1z" opacity="0"/><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
+          <span><strong>The website's own fields</strong>Fields that plugins or the theme have opened to apps, a subtitle, a message for social networks, appear by themselves, explained in plain words.</span>
+        </li>
+      </ul>
+    </div>
+    <img class="win reveal" src="assets/img/mac-categories.jpg" alt="The category picker on the Mac: the site's categories with their counts, the new category “Portugal” ticked, a search field on top." width="1700" height="1144" loading="lazy">
+  </div>
+</section>
+
+<!-- 7 · Devices -->
 <section class="panel panel--navy" id="devices">
   <div class="wrap center">
     <p class="eyebrow reveal">One app, three devices</p>
     <h2 class="reveal" style="--d:.06s">At your desk. <span class="hl">Or on the sofa.</span></h2>
-    <p class="lede reveal" style="--d:.12s">The same app on iPhone, iPad and Mac. Upload from wherever your files are: iCloud Drive, the Files app or a folder on your Mac.</p>
+    <p class="lede reveal" style="--d:.12s">The same app on iPhone, iPad and Mac, one purchase for all three. Upload from wherever your files are: iCloud Drive, the Files app or a folder on your Mac.</p>
     <div class="devices">
       <div class="tablet reveal" style="--d:.18s">
         <img src="assets/img/ipad-done.jpg" alt="Hybrid AutoPress on the iPad: all seven documents uploaded, the selected post saved as a draft." width="1350" height="1800" loading="lazy">
@@ -149,25 +279,25 @@
   </div>
 </section>
 
-<!-- 5 · Front matter -->
+<!-- 8 · Front matter -->
 <section class="panel panel--paper2" id="front-matter">
   <div class="wrap split split--flip">
     <div>
       <p class="eyebrow reveal">Front matter</p>
       <h2 class="reveal" style="--d:.06s">A few lines on top. <span class="hl">If you like.</span></h2>
-      <p class="lede reveal" style="--d:.12s">Optional front matter controls everything per file. Without it, the first heading becomes the title and does not show up twice in the post.</p>
+      <p class="lede reveal" style="--d:.12s">Optional front matter, as Jekyll, Hugo and Obsidian write it, controls everything per file. Without it, the first heading becomes the title and does not show up twice in the post. Everything in the file is only a starting value that can still be changed in the app.</p>
       <ul class="ticks">
         <li class="reveal" style="--d:.18s">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
-          <span><strong>Everything WordPress needs</strong>title, type, status, slug, excerpt, date, tags, categories, featured_image.</span>
+          <span><strong>Everything WordPress needs</strong>title, type, status, date, slug, excerpt, tags, categories, author, comments, sticky, featured_image and its alt text.</span>
         </li>
         <li class="reveal" style="--d:.24s">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>
-          <span><strong>Tags and categories are created</strong>What does not exist on the site yet is added during the upload.</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/></svg>
+          <span><strong>Pictures and search engines, too</strong>credit for the pictures of that document; seo_title, meta_description and focus_keyword for your SEO plugin.</span>
         </li>
         <li class="reveal" style="--d:.3s">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-          <span><strong>Clean HTML</strong>Headings, links, lists, real tables and quotes, converted by the engine that also drives Hybrid.</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>
+          <span><strong>Straight from your writing tool</strong>Files from Hybrid, Obsidian, iA Writer or a static-site generator work as they are. AutoPress reads .md, .markdown, .mdown, .mkd and .mdwn.</span>
         </li>
       </ul>
     </div>
@@ -175,56 +305,86 @@
 <span class="c"># optional: every line may be left out</span>
 <span class="k">title:</span> Lisbon in Three Days
 <span class="k">type:</span> post
-<span class="k">status:</span> draft
+<span class="k">status:</span> scheduled
+<span class="k">date:</span> 2026-10-03 08:30
 <span class="k">slug:</span> lisbon-in-three-days
-<span class="k">tags:</span> Lisbon, City trips, Food
+<span class="k">tags:</span> [Lisbon, City trips, Food]
 <span class="k">categories:</span> Portugal
-<span class="k">featured_image:</span> lisbon.jpg
+<span class="k">featured_image:</span> images/alfama.jpg
+<span class="k">credit:</span> © Maria Santos
+<span class="k">seo_title:</span> Lisbon in Three Days: An Itinerary
+<span class="k">meta_description:</span> Seven hills, one tram line, the best custard tarts.
 <span class="c">---</span>
 
 <span class="h"># Lisbon in Three Days</span>
 
-Lisbon rewards people who walk …
-
-![Rooftops at sunset](alfama-rooftops.jpg)</pre>
+Lisbon rewards people who walk …</pre>
   </div>
 </section>
 
-<!-- 6 · Your WordPress -->
+<!-- 9 · Your WordPress -->
 <section class="panel panel--deep" id="sites">
   <div class="wrap">
     <p class="eyebrow reveal">Your WordPress</p>
     <h2 class="reveal" style="--d:.06s">Works with your WordPress. <span class="hl">Wherever it is hosted.</span></h2>
-    <p class="lede reveal" style="--d:.12s">Sign in through the browser and WordPress itself creates an application password for the app. Or enter one by hand. The REST API is found automatically. WordPress.com sites connect by signing in through the browser.</p>
+    <p class="lede reveal" style="--d:.12s">Sign in through the browser and WordPress itself creates an application password for the app. Your login password never reaches AutoPress, and the access can be revoked in your profile at any time. WordPress.com sites connect the same way. Any WordPress 5.6 or later, reachable via https.</p>
     <ul class="chips reveal" style="--d:.18s">
-      <li>IONOS</li><li>STRATO</li><li>ALL-INKL</li><li>Hostinger</li><li>Raidboxes</li><li>WP Engine</li><li>Kinsta</li><li>WordPress.com</li><li class="more">… and any other host</li>
+      <li>WordPress.com</li><li>IONOS</li><li>STRATO</li><li>ALL-INKL.COM</li><li>Hostinger</li><li>Raidboxes</li><li>WP Engine</li><li>Kinsta</li><li>SiteGround</li><li>Bluehost</li><li>GoDaddy</li><li>Hetzner</li><li>Host Europe</li><li>mittwald</li><li>Cloudways</li><li>DreamHost</li><li class="more">… and any other host</li>
     </ul>
-    <div class="cards">
+    <div class="cards cards--4">
       <article class="card reveal" style="--d:.1s">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        <h3>Credentials stay in the keychain</h3><p>Never in the settings, never in a file. And only over https: credentials are not sent over an unencrypted connection.</p>
+        <h3>Credentials stay in the keychain</h3><p>Never in the settings, never in a file. Websites are only ever contacted via https; over an unencrypted connection nothing is sent.</p>
       </article>
-      <article class="card reveal" style="--d:.18s">
+      <article class="card reveal" style="--d:.16s">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/><circle cx="12" cy="12" r="4"/></svg>
-        <h3>Errors with a way out</h3><p>If your server swallows the <code>Authorization</code> header, which is common with shared hosting, AutoPress recognises it and shows the <code>.htaccess</code> line that fixes it.</p>
+        <h3>Errors with a way out</h3><p>If your server swallows the sign-in, which is common with shared hosting, AutoPress recognises it and shows the <code>.htaccess</code> line that fixes it. A security plugin in the way is named.</p>
       </article>
-      <article class="card reveal" style="--d:.26s">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.500 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.500-1.200 6.240-2.720a1.170 1.170 0 0 1 1.520 0C14.510 3.810 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
-        <h3>Talks to your site, nothing else</h3><p>No account needed, no tracking, no server in between. The app speaks directly to your WordPress.</p>
+      <article class="card reveal" style="--d:.22s">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+        <h3>Talks to your site, nothing else</h3><p>No account needed, no tracking, no server in between. Documents and pictures go from your device straight to your WordPress.</p>
+      </article>
+      <article class="card reveal" style="--d:.28s">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+        <h3>Help, built in</h3><p>Fourteen short topics from the first step to troubleshooting, in all nine languages, plus a hint wherever one is needed: under the fields, at sign-in, with every error.</p>
       </article>
     </div>
   </div>
 </section>
 
-<!-- 7 · Benefits -->
-<section class="panel panel--paper" id="benefits">
+<!-- 10 · AutoPress Pro -->
+<section class="panel panel--paper" id="pro">
+  <div class="wrap split split--flip">
+    <div>
+      <p class="eyebrow reveal">AutoPress Pro</p>
+      <h2 class="reveal" style="--d:.06s">Seven days free. <span class="hl">Then Pro, or free for good.</span></h2>
+      <p class="lede reveal" style="--d:.12s">After installation everything is usable for seven days, no account, no payment details. Then the AutoPress Pro subscription, monthly or yearly, keeps it that way; the App Store shows the price. Without it the app goes on as a free version.</p>
+      <table class="plans reveal" style="--d:.18s">
+        <thead><tr><th scope="col">Free</th><th scope="col">AutoPress Pro</th></tr></thead>
+        <tbody>
+          <tr><td>One document at a time</td><td>Any number of documents at once</td></tr>
+          <tr><td>Pictures at full size, as JPEG</td><td>Scaled to web size, JPEG or WebP</td></tr>
+          <tr><td>Draft or publish now</td><td>Plus scheduled publishing, staggered for a batch</td></tr>
+          <tr><td>Post or page, featured image, crop, credit</td><td>Plus details, options, SEO fields and the site's own fields</td></tr>
+        </tbody>
+      </table>
+      <p class="note reveal" style="--d:.24s">Locked fields are not sent in the free version, not even when the Markdown file sets them; a scheduled document becomes a draft, never public by accident. The subscription runs through the App Store and can be cancelled there at any time.</p>
+    </div>
+    <div class="reveal" style="--d:.15s">
+      <img class="win win--tall win--sheet" src="assets/img/mac-pro.png" alt="The Pro window on the Mac: the five Pro features, the monthly and yearly plan, Restore Purchases and Manage Subscription." width="1036" height="1288" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- 11 · Benefits -->
+<section class="panel panel--paper2" id="benefits">
   <div class="wrap">
     <p class="eyebrow reveal">What you get out of it</p>
     <h2 class="reveal" style="--d:.06s">Less clicking. <span class="hl">More publishing.</span></h2>
     <div class="bento">
       <article class="tile tile--wide tile--navy reveal">
         <div class="big" aria-hidden="true">1×</div>
-        <h3>One click instead of twenty rounds</h3><p>Twenty articles no longer mean twenty times copy, paste, upload images, fix links. Add the folder, press upload.</p>
+        <h3>One click instead of twenty rounds</h3><p>Twenty articles no longer mean twenty times copy, paste, upload images, fix links, pick categories. Add the folder, press upload.</p>
       </article>
       <article class="tile tile--wide reveal" style="--d:.08s">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
@@ -235,17 +395,17 @@ Lisbon rewards people who walk …
         <h3>Your text stays yours</h3><p>The Markdown files on your disk remain the original, readable in any editor, today and in ten years.</p>
       </article>
       <article class="tile reveal" style="--d:.12s">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.500A2 2 0 0 0 8.500 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.500 9.936A2 2 0 0 0 9.937 8.500l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.500A2 2 0 0 0 15.500 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.500 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
         <h3>Made for AI workflows</h3><p>Texts from ChatGPT, Claude and the like arrive as Markdown anyway. AutoPress takes them to your site without detours.</p>
       </article>
       <article class="tile reveal" style="--d:.2s">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-        <h3>For whole sites, too</h3><p>Moving a site or starting a new one? Pages and posts go up in a single run, tags and categories included.</p>
+        <h3>For whole sites, too</h3><p>Moving a site or starting a new one? Pages and posts go up in a single run, tags, categories and pictures included.</p>
       </article>
     </div>
     <aside class="sister reveal">
       <div class="sister__mark" aria-hidden="true">H</div>
-      <div><h3>From the maker of Hybrid</h3><p>Hybrid is the Markdown editor that knows who wrote what: you, an AI or a source. AutoPress takes what you write there to WordPress.</p></div>
+      <div><h3>From the maker of Hybrid</h3><p>Hybrid is the Markdown editor that knows who wrote what: you, an AI or a source. Both use the same Markdown engine, so what you saw in Hybrid is what arrives in WordPress.</p></div>
       <a class="link" href="https://hybrid-editor.com/" rel="noopener">Discover Hybrid
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
       </a>
@@ -253,16 +413,20 @@ Lisbon rewards people who walk …
   </div>
 </section>
 
-<!-- 8 · Closing -->
+<!-- 12 · Languages + closing -->
 <section class="panel panel--navy closing" id="get">
   <div class="wrap center">
-    <img class="hero__icon reveal" src="assets/img/icon-512.png" alt="" width="112" height="112" loading="lazy">
-    <h2 class="reveal" style="--d:.06s">Write in Markdown. <span class="hl">Publish in bulk.</span></h2>
-    <p class="lede reveal" style="--d:.12s">Hybrid AutoPress is coming to the App Store: one app for iPhone, iPad and Mac.</p>
-    <div class="actions reveal" style="--d:.18s">
-      <span class="soon"><i aria-hidden="true"></i>Coming soon to the App Store</span>
+    <p class="eyebrow reveal">Speaks your language</p>
+    <h2 class="reveal" style="--d:.06s">Nine languages. <span class="hl">In the app and on this page.</span></h2>
+    <p class="lede reveal" style="--d:.12s">Hybrid AutoPress follows the language of your device, and the built-in help does too.</p>
+    <ul class="langs reveal" style="--d:.18s"><li><a href="" hreflang="en" lang="en" aria-current="page">English</a></li><li><a href="de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="es/" hreflang="es" lang="es">Español</a></li><li><a href="it/" hreflang="it" lang="it">Italiano</a></li><li><a href="pt/" hreflang="pt" lang="pt">Português</a></li><li><a href="nl/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="zh/" hreflang="zh-Hans" lang="zh">简体中文</a></li></ul>
+    <div class="closing__end reveal" style="--d:.24s">
+      <img class="hero__icon" src="assets/img/icon-512.png" alt="" width="112" height="112" loading="lazy">
+      <h2>Write in Markdown. <span class="hl">Publish in bulk.</span></h2>
+      <p class="lede">Hybrid AutoPress is coming to the App Store: one app for iPhone, iPad and Mac.</p>
+      <div class="actions"><span class="soon"><i aria-hidden="true"></i>Coming soon to the App Store</span></div>
+      <p class="req">Requires iOS 17, iPadOS 17 or macOS 14 · A WordPress site 5.6 or later, reachable via https</p>
     </div>
-    <p class="req reveal" style="--d:.24s">Requires iOS 17, iPadOS 17 or macOS 14 · English and German</p>
   </div>
 </section>
 
@@ -273,11 +437,11 @@ Lisbon rewards people who walk …
     <nav aria-label="Footer">
       <a href="impressum/">Legal Notice (Impressum)</a>
       <a href="datenschutz/">Privacy Policy</a>
+      <a href="datenschutz-app/en/">App Privacy</a>
       <a href="https://hybrid-editor.com/">Hybrid Editor</a>
-      <a href="de/" hreflang="de" lang="de">Deutsch</a>
     </nav>
     <p>© 2026 Pascal Hugo · Hybrid AutoPress</p>
-    <p class="fine">WordPress is a trademark of the WordPress Foundation. Hybrid AutoPress is an independent app and is not affiliated with or endorsed by the WordPress Foundation, Automattic or any of the hosting companies named. Apple, iPhone, iPad, Mac and App Store are trademarks of Apple Inc. The screenshots show sample content.</p>
+    <p class="fine">WordPress is a trademark of the WordPress Foundation. Hybrid AutoPress is an independent app and is not affiliated with or endorsed by the WordPress Foundation, Automattic or any of the hosting companies or plugins named. Apple, iPhone, iPad, Mac and App Store are trademarks of Apple Inc. The screenshots show sample content.</p>
   </div>
 </footer>
 
