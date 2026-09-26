@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>支持 · Hybrid AutoPress</title>
+<meta name="description" content="Hybrid AutoPress 帮助：联系方式、最常见连接问题的解答以及订阅相关信息。">
+<meta name="theme-color" content="#1a3a5e">
+<link rel="canonical" href="https://hybrid-autopress.com/support/zh/">
+<link rel="alternate" hreflang="en" href="https://hybrid-autopress.com/support/en/">
+<link rel="alternate" hreflang="de" href="https://hybrid-autopress.com/support/de/">
+<link rel="alternate" hreflang="fr" href="https://hybrid-autopress.com/support/fr/">
+<link rel="alternate" hreflang="es" href="https://hybrid-autopress.com/support/es/">
+<link rel="alternate" hreflang="it" href="https://hybrid-autopress.com/support/it/">
+<link rel="alternate" hreflang="pt" href="https://hybrid-autopress.com/support/pt/">
+<link rel="alternate" hreflang="nl" href="https://hybrid-autopress.com/support/nl/">
+<link rel="alternate" hreflang="ja" href="https://hybrid-autopress.com/support/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://hybrid-autopress.com/support/zh/">
+<link rel="alternate" hreflang="x-default" href="https://hybrid-autopress.com/support/en/">
+<link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="legal-page">
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="../../zh/" aria-label="Hybrid AutoPress">
+      <img src="../../assets/img/favicon.png" alt="" width="30" height="30">
+      <span>Hybrid AutoPress</span>
+    </a>
+    <nav class="nav__links" aria-label="Page">
+      <a href="../../zh/">首页</a>
+      <details class="langmenu">
+        <summary class="lang" aria-label="语言">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          简体中文
+        </summary>
+        <ul><li><a href="../../support/en/" hreflang="en" lang="en">English</a></li><li><a href="../../support/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="../../support/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="../../support/es/" hreflang="es" lang="es">Español</a></li><li><a href="../../support/it/" hreflang="it" lang="it">Italiano</a></li><li><a href="../../support/pt/" hreflang="pt" lang="pt">Português</a></li><li><a href="../../support/nl/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="../../support/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="../../support/zh/" hreflang="zh-Hans" lang="zh" aria-current="page">简体中文</a></li></ul>
+      </details>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="legal-hero panel--navy">
+    <div class="wrap">
+      <p class="eyebrow">支持</p>
+      <h1>Hybrid AutoPress 支持</h1>
+      <p class="lede">有问题、遇到故障或有建议？请给我写信；每封邮件我都亲自回复。许多连接问题都能很快解决，见下文。</p>
+    </div>
+  </section>
+
+  <section class="legal">
+    <div class="wrap legal__grid">
+      <article class="legal__card support-contact">
+        <h2>联系</h2>
+        <p>请用英语或德语发送电子邮件。我通常在两个工作日内回复。</p>
+        <p class="support-mail"><a href="mailto:pascal@pascalhugo.de?subject=Hybrid%20AutoPress">pascal@pascalhugo.de</a></p>
+      </article>
+
+      <article class="legal__card">
+        <h2>这些信息有助于我帮你</h2>
+        <ul class="support-list">
+          <li>你的设备和系统版本（iPhone、iPad 或 Mac；iOS、iPadOS 或 macOS）。</li>
+          <li>App 版本：在 Mac 上见 Hybrid AutoPress →“关于 Hybrid AutoPress”。</li>
+          <li>你的 WordPress 版本和托管商，以及安全或 SEO 插件。</li>
+          <li>App 显示的确切信息，以及之前的操作步骤。欢迎附上截图。</li>
+        </ul>
+      </article>
+
+      <h2 class="support-faq-h legal__card--wide">常见问题</h2>
+
+      <article class="legal__card legal__card--wide legal__card--faq">
+        <h2>“登录信息未到达 WordPress。”</h2>
+        <p>Web 服务器在 WordPress 看到之前丢弃了登录信息；这在共享主机上很常见。请在 WordPress 文件夹的 .htaccess 文件中加入这一行，然后重新连接：</p>
+        <pre class="code code--line"><code>SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1</code></pre>
+      </article>
+
+      <article class="legal__card legal__card--faq">
+        <h2>“此网站不支持应用程序密码。”</h2>
+        <p>需要 WordPress 5.6 或更高版本以及 https。Wordfence 等安全插件默认会关闭它们；请在插件设置中允许。</p>
+      </article>
+
+      <article class="legal__card legal__card--faq">
+        <h2>“找到了 WordPress，但其 REST API 已关闭或被阻止。”</h2>
+        <p>某个安全插件或服务器规则阻止了 /wp-json/。它必须对已登录用户可访问；请检查插件的 REST API 设置或咨询托管商。</p>
+      </article>
+
+      <article class="legal__card legal__card--faq">
+        <h2>“用户名或应用程序密码错误。”</h2>
+        <p>请使用应用程序密码（用户 → 个人资料 → 应用程序密码），而不是普通登录密码。或者选择通过浏览器登录，WordPress 会为你创建一个。</p>
+      </article>
+
+      <article class="legal__card legal__card--faq">
+        <h2>图片超过了网站接受的大小</h2>
+        <p>在图片设置中选择更小的长边（列表中的“图片”一行，Mac 上 ⌘,），或在托管商处提高上传限制。</p>
+      </article>
+
+      <article class="legal__card legal__card--faq">
+        <h2>恢复或管理 AutoPress Pro</h2>
+        <p>打开 Pro 窗口，在使用同一 Apple 账户的新设备上选择“恢复购买”，或选择“管理订阅”来更改或取消。</p>
+      </article>
+
+      <article class="legal__card legal__card--faq">
+        <h2>取消与退款</h2>
+        <p>订阅通过 App Store 进行。可随时在 Apple 账户设置中取消；退款由 Apple 在 reportaproblem.apple.com 处理。</p>
+      </article>
+
+      <article class="legal__card legal__card--wide legal__card--note">
+        <p>App 自带帮助，共十四个简短主题：Mac 上见 帮助 →“AutoPress 帮助”（⌘?），iPhone 和 iPad 上点列表顶部的问号。 <a href="../../zh/">AutoPress 能做什么</a> · <a href="../../datenschutz-app/zh/">App 隐私</a></p>
+      </article>
+
+      <p class="legal__back">
+        <a class="link" href="../../zh/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+          返回首页</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav aria-label="Footer">
+      <a href="../../impressum/">法律声明（Impressum）</a>
+      <a href="../../datenschutz/">隐私（网站）</a>
+      <a href="../../datenschutz-app/zh/">App 隐私</a>
+      <a href="./" aria-current="page">支持</a>
+    </nav>
+    <p>© 2026 Pascal Hugo · Hybrid AutoPress</p>
+  </div>
+</footer>
+</body>
+</html>

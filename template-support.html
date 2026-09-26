@@ -45,76 +45,68 @@
 
   <section class="legal">
     <div class="wrap legal__grid">
+      <article class="legal__card support-contact">
+        <h2>{{contact_h}}</h2>
+        <p>{{contact_p}}</p>
+        <p class="support-mail"><a href="mailto:pascal@pascalhugo.de?subject=Hybrid%20AutoPress">pascal@pascalhugo.de</a></p>
+      </article>
+
+      <article class="legal__card">
+        <h2>{{include_h}}</h2>
+        <ul class="support-list">
+          <li>{{include_1}}</li>
+          <li>{{include_2}}</li>
+          <li>{{include_3}}</li>
+          <li>{{include_4}}</li>
+        </ul>
+      </article>
+
+      <h2 class="support-faq-h legal__card--wide">{{faq_h}}</h2>
+
+      <article class="legal__card legal__card--wide legal__card--faq">
+        <h2>{{q1_t}}</h2>
+        <p>{{q1_p}}</p>
+        <pre class="code code--line"><code>SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1</code></pre>
+      </article>
+
+      <article class="legal__card legal__card--faq">
+        <h2>{{q2_t}}</h2>
+        <p>{{q2_p}}</p>
+      </article>
+
+      <article class="legal__card legal__card--faq">
+        <h2>{{q3_t}}</h2>
+        <p>{{q3_p}}</p>
+      </article>
+
+      <article class="legal__card legal__card--faq">
+        <h2>{{q4_t}}</h2>
+        <p>{{q4_p}}</p>
+      </article>
+
+      <article class="legal__card legal__card--faq">
+        <h2>{{q5_t}}</h2>
+        <p>{{q5_p}}</p>
+      </article>
+
+      <article class="legal__card legal__card--faq">
+        <h2>{{q6_t}}</h2>
+        <p>{{q6_p}}</p>
+      </article>
+
+      <article class="legal__card legal__card--faq">
+        <h2>{{q7_t}}</h2>
+        <p>{{q7_p}}</p>
+      </article>
+
       <article class="legal__card legal__card--wide legal__card--note">
-        <p>{{note}}</p>
-      </article>
-
-      <article class="legal__card">
-        <h2>{{s1_h}}</h2>
-        <address>
-          Pascal Hugo<br>
-          Kropsburgstr. 5a<br>
-          76767 Hagenbach<br>
-          {{country}}<br>
-          {{email_label}} <a href="mailto:pascal@pascalhugo.de">pascal@pascalhugo.de</a>
-        </address>
-      </article>
-
-      <article class="legal__card">
-        <h2>{{s2_h}}</h2>
-        <p>{{s2_p}}</p>
-      </article>
-
-      <article class="legal__card legal__card--wide">
-        <h2>{{s3_h}}</h2>
-        <p>{{s3_p1}}</p>
-        <p>{{s3_p2}}</p>
-      </article>
-
-      <article class="legal__card legal__card--wide">
-        <h2>{{s4_h}}</h2>
-        <p>{{s4_p1}}</p>
-        <p>{{s4_p2}}</p>
-        <p>{{s4_p3}}</p>
-      </article>
-
-      <article class="legal__card">
-        <h2>{{s5_h}}</h2>
-        <p>{{s5_p}}</p>
-      </article>
-
-      <article class="legal__card">
-        <h2>{{s6_h}}</h2>
-        <p>{{s6_p}}</p>
-      </article>
-
-      <article class="legal__card legal__card--wide">
-        <h2>{{s7_h}}</h2>
-        <p>{{s7_p}}</p>
-      </article>
-
-      <article class="legal__card legal__card--wide">
-        <h2>{{s8_h}}</h2>
-        <p>{{s8_p}}</p>
-      </article>
-
-      <article class="legal__card legal__card--wide">
-        <h2>{{s9_h}}</h2>
-        <p>{{s9_p1}}</p>
-        <p>{{s9_p2}}</p>
-      </article>
-
-      <article class="legal__card legal__card--wide">
-        <h2>{{s10_h}}</h2>
-        <p>{{s10_p}}</p>
+        <p>{{help_p}} <a href="{{home}}">{{help_link_home}}</a> · <a href="{{root}}datenschutz-app/{{lang}}/">{{foot_app_privacy}}</a></p>
       </article>
 
       <p class="legal__back">
         <a class="link" href="{{home}}">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
           {{back}}</a>
-        <a class="link" href="{{root}}datenschutz/">{{website_policy}}
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
       </p>
     </div>
   </section>
@@ -125,8 +117,8 @@
     <nav aria-label="Footer">
       <a href="{{root}}impressum/">{{foot_imprint}}</a>
       <a href="{{root}}datenschutz/">{{foot_privacy}}</a>
-      <a href="./" aria-current="page">{{foot_app_privacy}}</a>
-      <a href="{{root}}support/{{lang}}/">{{foot_support}}</a>
+      <a href="{{root}}datenschutz-app/{{lang}}/">{{foot_app_privacy}}</a>
+      <a href="./" aria-current="page">{{foot_support}}</a>
     </nav>
     <p>© 2026 Pascal Hugo · Hybrid AutoPress</p>
   </div>

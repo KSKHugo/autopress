@@ -5,6 +5,7 @@
 
 template.html + texts.py            → index.html and <lang>/index.html
 template-privacy.html + privacy.py  → datenschutz-app/<lang>/index.html (the app's privacy policy)
+template-support.html + support.py  → support/<lang>/index.html (the App Store support URL)
 
 English is the primary language and lives at the root; every other language gets its
 own folder. A new language = one more entry in LANGUAGES and one more dictionary in
@@ -16,6 +17,7 @@ from pathlib import Path
 
 from texts import T
 from privacy import P
+from support import S
 
 HERE = Path(__file__).parent
 SITE = "https://hybrid-autopress.com/"
@@ -62,11 +64,12 @@ def menu(root, folders, current):
 
 PAGE_FOLDERS = {c: p for c, p, _, _ in LANGUAGES}
 PRIVACY_FOLDERS = {c: f"datenschutz-app/{c}/" for c, _, _, _ in LANGUAGES}
+SUPPORT_FOLDERS = {c: f"support/{c}/" for c, _, _, _ in LANGUAGES}
 
 
 def build_page(code, path, name):
     root = "../" * path.count("/")
-    values = dict(T[code], lang=code, root=root, site=SITE, shots=f"{root}assets/img/{code}/", canonical=SITE + path, lang_name=name,
+    values = dict(T[code], foot_support=S[code]["foot_support"], lang=code, root=root, site=SITE, shots=f"{root}assets/img/{code}/", canonical=SITE + path, lang_name=name,
                   lang_menu=menu(root, PAGE_FOLDERS, code), lang_list=menu(root, PAGE_FOLDERS, code),
                   hreflangs=hreflangs("", PAGE_FOLDERS))
     render((HERE / "template.html").read_text(encoding="utf-8"), values, HERE / path / "index.html")
@@ -74,13 +77,21 @@ def build_page(code, path, name):
 
 def build_privacy(code, path, name):
     root = "../../"
-    values = dict(P[code], lang=code, root=root, site=SITE, canonical=SITE + PRIVACY_FOLDERS[code], lang_name=name,
+    values = dict(P[code], foot_support=S[code]["foot_support"], lang=code, root=root, site=SITE, canonical=SITE + PRIVACY_FOLDERS[code], lang_name=name,
                   lang_menu=menu(root, PRIVACY_FOLDERS, code), home=root + path, hreflangs=hreflangs("", PRIVACY_FOLDERS))
     render((HERE / "template-privacy.html").read_text(encoding="utf-8"), values, HERE / PRIVACY_FOLDERS[code] / "index.html")
 
 
+def build_support(code, path, name):
+    root = "../../"
+    base = {k: P[code][k] for k in ("skip", "lang_menu_label", "foot_imprint", "foot_privacy", "foot_app_privacy")}
+    values = dict(base, **S[code], lang=code, root=root, site=SITE, canonical=SITE + SUPPORT_FOLDERS[code], lang_name=name,
+                  lang_menu=menu(root, SUPPORT_FOLDERS, code), home=root + path, hreflangs=hreflangs("", SUPPORT_FOLDERS))
+    render((HERE / "template-support.html").read_text(encoding="utf-8"), values, HERE / SUPPORT_FOLDERS[code] / "index.html")
+
+
 def build_sitemap():
-    urls = [SITE + p for _, p, _, _ in LANGUAGES] + [SITE + PRIVACY_FOLDERS[c] for c, _, _, _ in LANGUAGES]
+    urls = [SITE + p for _, p, _, _ in LANGUAGES] + [SITE + PRIVACY_FOLDERS[c] for c, _, _, _ in LANGUAGES] + [SITE + SUPPORT_FOLDERS[c] for c, _, _, _ in LANGUAGES]
     urls += [SITE + "impressum/", SITE + "datenschutz/"]
     body = "\n".join("  <url><loc>" + u + "</loc></url>" for u in urls)
     head = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -99,4 +110,6 @@ if __name__ == "__main__":
             build_privacy(code, path, name)
         else:
             print("no privacy texts for", code)
+    for code, path, name, _ in LANGUAGES:
+        build_support(code, path, name)
     build_sitemap()

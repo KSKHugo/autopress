@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Support · Hybrid AutoPress</title>
+<meta name="description" content="Hilfe zu Hybrid AutoPress: Kontakt, Antworten auf die häufigsten Verbindungsprobleme und zum Abo.">
+<meta name="theme-color" content="#1a3a5e">
+<link rel="canonical" href="https://hybrid-autopress.com/support/de/">
+<link rel="alternate" hreflang="en" href="https://hybrid-autopress.com/support/en/">
+<link rel="alternate" hreflang="de" href="https://hybrid-autopress.com/support/de/">
+<link rel="alternate" hreflang="fr" href="https://hybrid-autopress.com/support/fr/">
+<link rel="alternate" hreflang="es" href="https://hybrid-autopress.com/support/es/">
+<link rel="alternate" hreflang="it" href="https://hybrid-autopress.com/support/it/">
+<link rel="alternate" hreflang="pt" href="https://hybrid-autopress.com/support/pt/">
+<link rel="alternate" hreflang="nl" href="https://hybrid-autopress.com/support/nl/">
+<link rel="alternate" hreflang="ja" href="https://hybrid-autopress.com/support/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://hybrid-autopress.com/support/zh/">
+<link rel="alternate" hreflang="x-default" href="https://hybrid-autopress.com/support/en/">
+<link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="legal-page">
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="../../de/" aria-label="Hybrid AutoPress">
+      <img src="../../assets/img/favicon.png" alt="" width="30" height="30">
+      <span>Hybrid AutoPress</span>
+    </a>
+    <nav class="nav__links" aria-label="Page">
+      <a href="../../de/">Startseite</a>
+      <details class="langmenu">
+        <summary class="lang" aria-label="Sprache">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          Deutsch
+        </summary>
+        <ul><li><a href="../../support/en/" hreflang="en" lang="en">English</a></li><li><a href="../../support/de/" hreflang="de" lang="de" aria-current="page">Deutsch</a></li><li><a href="../../support/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="../../support/es/" hreflang="es" lang="es">Español</a></li><li><a href="../../support/it/" hreflang="it" lang="it">Italiano</a></li><li><a href="../../support/pt/" hreflang="pt" lang="pt">Português</a></li><li><a href="../../support/nl/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="../../support/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="../../support/zh/" hreflang="zh-Hans" lang="zh">简体中文</a></li></ul>
+      </details>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="legal-hero panel--navy">
+    <div class="wrap">
+      <p class="eyebrow">Support</p>
+      <h1>Support für Hybrid AutoPress</h1>
+      <p class="lede">Fragen, Probleme oder Wünsche? Schreib mir; ich beantworte jede Nachricht selbst. Viele Verbindungsprobleme lassen sich schnell lösen, siehe unten.</p>
+    </div>
+  </section>
+
+  <section class="legal">
+    <div class="wrap legal__grid">
+      <article class="legal__card support-contact">
+        <h2>Kontakt</h2>
+        <p>Schick eine E-Mail, auf Deutsch oder Englisch. Meist antworte ich innerhalb von zwei Werktagen.</p>
+        <p class="support-mail"><a href="mailto:pascal@pascalhugo.de?subject=Hybrid%20AutoPress">pascal@pascalhugo.de</a></p>
+      </article>
+
+      <article class="legal__card">
+        <h2>Was mir beim Helfen hilft</h2>
+        <ul class="support-list">
+          <li>Dein Gerät und die Systemversion (iPhone, iPad oder Mac; iOS, iPadOS oder macOS).</li>
+          <li>Die App-Version: auf dem Mac unter Hybrid AutoPress → Über Hybrid AutoPress.</li>
+          <li>Deine WordPress-Version und deinen Hosting-Anbieter, dazu Sicherheits- oder SEO-Plugins.</li>
+          <li>Die genaue Meldung der App und die Schritte davor. Ein Bildschirmfoto ist willkommen.</li>
+        </ul>
+      </article>
+
+      <h2 class="support-faq-h legal__card--wide">Häufige Probleme</h2>
+
+      <article class="legal__card legal__card--wide legal__card--faq">
+        <h2>„Die Anmeldung ist bei WordPress nicht angekommen.“</h2>
+        <p>Der Webserver verschluckt die Anmeldung, bevor WordPress sie sieht; das ist bei Shared Hosting häufig. Füge diese Zeile in die .htaccess-Datei in deinem WordPress-Ordner ein und verbinde dich erneut:</p>
+        <pre class="code code--line"><code>SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1</code></pre>
+      </article>
+
+      <article class="legal__card legal__card--faq">
+        <h2>„Anwendungspasswörter stehen auf dieser Website nicht zur Verfügung.“</h2>
+        <p>Sie brauchen WordPress 5.6 oder neuer und https. Sicherheits-Plugins wie Wordfence schalten sie standardmäßig ab; erlaube sie in den Einstellungen des Plugins.</p>
+      </article>
+
+      <article class="legal__card legal__card--faq">
+        <h2>„WordPress wurde gefunden, aber die REST-API ist abgeschaltet oder blockiert.“</h2>
+        <p>Ein Sicherheits-Plugin oder eine Server-Regel sperrt /wp-json/. Für angemeldete Benutzer muss es erreichbar sein; prüfe die REST-API-Einstellungen des Plugins oder frag deinen Anbieter.</p>
+      </article>
+
+      <article class="legal__card legal__card--faq">
+        <h2>„Benutzername oder Anwendungspasswort sind falsch.“</h2>
+        <p>Verwende ein Anwendungspasswort (Benutzer → Profil → Anwendungspasswörter), nicht dein normales Login-Passwort. Oder wähle „Im Browser anmelden“, dann legt WordPress eines für dich an.</p>
+      </article>
+
+      <article class="legal__card legal__card--faq">
+        <h2>Ein Bild ist größer, als die Website annimmt</h2>
+        <p>Wähle in den Bildeinstellungen eine kleinere lange Kante (Zeile „Bilder“ in der Liste, auf dem Mac ⌘,) oder erhöhe das Upload-Limit bei deinem Anbieter.</p>
+      </article>
+
+      <article class="legal__card legal__card--faq">
+        <h2>AutoPress Pro wiederherstellen oder verwalten</h2>
+        <p>Öffne das Pro-Fenster und wähle „Käufe wiederherstellen“ auf einem neuen Gerät mit demselben Apple-Account, oder „Abo verwalten“, um es zu ändern oder zu kündigen.</p>
+      </article>
+
+      <article class="legal__card legal__card--faq">
+        <h2>Kündigung und Erstattung</h2>
+        <p>Das Abo läuft über den App Store. Es lässt sich jederzeit in den Einstellungen deines Apple-Accounts kündigen; Erstattungen bearbeitet Apple unter reportaproblem.apple.com.</p>
+      </article>
+
+      <article class="legal__card legal__card--wide legal__card--note">
+        <p>Die App hat eine eigene Hilfe mit vierzehn kurzen Themen: auf dem Mac unter Hilfe → AutoPress-Hilfe (⌘?), auf iPhone und iPad hinter dem Fragezeichen oben in der Liste. <a href="../../de/">Was AutoPress kann</a> · <a href="../../datenschutz-app/de/">Datenschutz in der App</a></p>
+      </article>
+
+      <p class="legal__back">
+        <a class="link" href="../../de/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+          Zurück zur Startseite</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav aria-label="Footer">
+      <a href="../../impressum/">Impressum</a>
+      <a href="../../datenschutz/">Datenschutz (Website)</a>
+      <a href="../../datenschutz-app/de/">Datenschutz in der App</a>
+      <a href="./" aria-current="page">Support</a>
+    </nav>
+    <p>© 2026 Pascal Hugo · Hybrid AutoPress</p>
+  </div>
+</footer>
+</body>
+</html>
