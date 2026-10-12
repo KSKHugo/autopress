@@ -38,6 +38,13 @@ LANGUAGES = [
 ]
 
 
+def badge_width(name, height=50):
+    """Apple's badges differ in width by language; the page reserves the right space."""
+    svg = (HERE / "assets" / "badges" / name).read_text(encoding="utf-8")
+    w, h = re.search(r'viewBox="0 0 ([\d.]+) ([\d.]+)"', svg).groups()
+    return str(round(float(w) * height / float(h)))
+
+
 def render(template, values, target):
     def fill(match):
         key = match.group(1)
@@ -71,7 +78,8 @@ SUPPORT_FOLDERS = {c: f"support/{c}/" for c, _, _, _ in LANGUAGES}
 
 def build_page(code, path, name):
     root = "../" * path.count("/")
-    values = dict(T[code], foot_support=S[code]["foot_support"], lang=code, root=root, site=SITE, store=STORE, shots=f"{root}assets/img/{code}/", canonical=SITE + path, lang_name=name,
+    values = dict(T[code], ios_badge_w=badge_width(f"app-store-{code}.svg"), mac_badge_w=badge_width(f"mac-app-store-{code}.svg"),
+                  foot_support=S[code]["foot_support"], lang=code, root=root, site=SITE, store=STORE, shots=f"{root}assets/img/{code}/", canonical=SITE + path, lang_name=name,
                   lang_menu=menu(root, PAGE_FOLDERS, code), lang_list=menu(root, PAGE_FOLDERS, code),
                   hreflangs=hreflangs("", PAGE_FOLDERS))
     render((HERE / "template.html").read_text(encoding="utf-8"), values, HERE / path / "index.html")

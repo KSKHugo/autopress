@@ -14,7 +14,7 @@ T["en"] = {
     "hero_eyebrow": "For iPhone, iPad and Mac",
     "hero_h1": 'A folder of Markdown in. <span class="hl">A WordPress site out.</span>',
     "hero_lede": "Hybrid AutoPress uploads many Markdown files to WordPress in one go. Every file becomes a post or a page, with headings, links, lists, tables and images, saved as a draft, published right away or scheduled for later.",
-    "store_alt": "Download on the Mac App Store", "store_ios": "Also for iPhone and iPad",
+    "store_alt": "Download on the Mac App Store", "store_ios": "Download on the App Store",
     "hero_more": "See how it works",
     "hero_alt": "Hybrid AutoPress on the Mac: seven Markdown documents in the list, the post “Lisbon in Three Days” with its featured image, credit, alt text, slug, excerpt and categories.",
 
@@ -134,7 +134,7 @@ T["de"] = {
     "hero_eyebrow": "Für iPhone, iPad und Mac",
     "hero_h1": 'Ein Ordner Markdown rein. <span class="hl">Eine WordPress-Website raus.</span>',
     "hero_lede": "Hybrid AutoPress lädt viele Markdown-Dateien auf einmal zu WordPress hoch. Aus jeder Datei wird ein Beitrag oder eine Seite, mit Überschriften, Links, Listen, Tabellen und Bildern, als Entwurf gespeichert, sofort veröffentlicht oder für später geplant.",
-    "store_alt": "Laden im Mac App Store", "store_ios": "Auch für iPhone und iPad",
+    "store_alt": "Laden im Mac App Store", "store_ios": "Laden im App Store",
     "hero_more": "So funktioniert es",
     "hero_alt": "Hybrid AutoPress auf dem Mac: sieben Markdown-Dokumente in der Liste, der Beitrag „Lissabon in drei Tagen“ mit Beitragsbild, Bildnachweis, Alt-Text, Permalink, Auszug und Kategorien.",
 

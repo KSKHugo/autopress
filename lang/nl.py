@@ -9,7 +9,7 @@ T = {
     "hero_eyebrow": "Voor iPhone, iPad en Mac",
     "hero_h1": 'Een map Markdown erin. <span class="hl">Een WordPress-site eruit.</span>',
     "hero_lede": "Hybrid AutoPress uploadt veel Markdown-bestanden in één keer naar WordPress. Elk bestand wordt een bericht of een pagina, met koppen, links, lijsten, tabellen en afbeeldingen, opgeslagen als concept, meteen gepubliceerd of ingepland voor later.",
-    "store_alt": "Download in de Mac App Store", "store_ios": "Ook voor iPhone en iPad",
+    "store_alt": "Download in de Mac App Store", "store_ios": "Download in de App Store",
     "hero_more": "Bekijk hoe het werkt",
     "hero_alt": "Hybrid AutoPress op de Mac: zeven Markdown-documenten in de lijst, het bericht ‘Lissabon in drie dagen’ met uitgelichte afbeelding, naamsvermelding, alt-tekst, slug, samenvatting en categorieën.",
 

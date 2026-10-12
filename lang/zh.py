@@ -9,7 +9,7 @@ T = {
     "hero_eyebrow": "适用于 iPhone、iPad 和 Mac",
     "hero_h1": '放进一个 Markdown 文件夹。<span class="hl">得到一个 WordPress 网站。</span>',
     "hero_lede": "Hybrid AutoPress 一次把许多 Markdown 文件上传到 WordPress。每个文件成为一篇文章或一个页面，保留标题、链接、列表、表格和图片，可存为草稿、立即发布或定时发布。",
-    "store_alt": "在Mac App Store下载", "store_ios": "也适用于 iPhone 和 iPad",
+    "store_alt": "在Mac App Store下载", "store_ios": "在 App Store 下载",
     "hero_more": "看看它怎么用",
     "hero_alt": "Mac 上的 Hybrid AutoPress：列表中有七篇 Markdown 文稿，文章“里斯本三日游”带有特色图片、署名、替代文本、别名、摘要和分类。",
 
