@@ -452,3 +452,11 @@ footer a:hover { text-decoration: underline; }
 .support-faq-h { grid-column: 1 / -1; margin-top: 28px; font-size: clamp(26px, 3vw, 36px); line-height: 1.1; letter-spacing: -0.02em; font-weight: 720; }
 .code--line { margin-top: 16px; padding: 16px 20px; font-size: 14px; border-radius: 14px; white-space: pre-wrap; overflow-wrap: anywhere; box-shadow: none; }
 .legal__card--faq h2 { text-transform: none; letter-spacing: -0.01em; font-size: 18px; line-height: 1.35; color: var(--ink); }
+
+/* ── App Store ──────────────────────────────────────────────── */
+
+.badge { display: inline-flex; border-radius: 9px; transition: transform 0.2s var(--ease), opacity 0.2s var(--ease); }
+.badge img { height: 50px; width: auto; }
+.badge:hover { transform: translateY(-1px); opacity: 0.9; }
+.btn--quiet { color: var(--on-navy-2); padding-left: 10px; padding-right: 10px; }
+.btn--quiet:hover { color: var(--on-navy); }

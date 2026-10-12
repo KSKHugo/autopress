@@ -21,6 +21,8 @@ from support import S
 
 HERE = Path(__file__).parent
 SITE = "https://hybrid-autopress.com/"
+# One App Store entry for iPhone, iPad and Mac; without a country it opens the visitor's own store.
+STORE = "https://apps.apple.com/app/hybrid-autopress/id6816450874"
 
 # code, folder, name in its own language, hreflang
 LANGUAGES = [
@@ -69,7 +71,7 @@ SUPPORT_FOLDERS = {c: f"support/{c}/" for c, _, _, _ in LANGUAGES}
 
 def build_page(code, path, name):
     root = "../" * path.count("/")
-    values = dict(T[code], foot_support=S[code]["foot_support"], lang=code, root=root, site=SITE, shots=f"{root}assets/img/{code}/", canonical=SITE + path, lang_name=name,
+    values = dict(T[code], foot_support=S[code]["foot_support"], lang=code, root=root, site=SITE, store=STORE, shots=f"{root}assets/img/{code}/", canonical=SITE + path, lang_name=name,
                   lang_menu=menu(root, PAGE_FOLDERS, code), lang_list=menu(root, PAGE_FOLDERS, code),
                   hreflangs=hreflangs("", PAGE_FOLDERS))
     render((HERE / "template.html").read_text(encoding="utf-8"), values, HERE / path / "index.html")
@@ -77,7 +79,7 @@ def build_page(code, path, name):
 
 def build_privacy(code, path, name):
     root = "../../"
-    values = dict(P[code], foot_support=S[code]["foot_support"], lang=code, root=root, site=SITE, canonical=SITE + PRIVACY_FOLDERS[code], lang_name=name,
+    values = dict(P[code], foot_support=S[code]["foot_support"], lang=code, root=root, site=SITE, store=STORE, canonical=SITE + PRIVACY_FOLDERS[code], lang_name=name,
                   lang_menu=menu(root, PRIVACY_FOLDERS, code), home=root + path, hreflangs=hreflangs("", PRIVACY_FOLDERS))
     render((HERE / "template-privacy.html").read_text(encoding="utf-8"), values, HERE / PRIVACY_FOLDERS[code] / "index.html")
 
@@ -85,7 +87,7 @@ def build_privacy(code, path, name):
 def build_support(code, path, name):
     root = "../../"
     base = {k: P[code][k] for k in ("skip", "lang_menu_label", "foot_imprint", "foot_privacy", "foot_app_privacy")}
-    values = dict(base, **S[code], lang=code, root=root, site=SITE, canonical=SITE + SUPPORT_FOLDERS[code], lang_name=name,
+    values = dict(base, **S[code], lang=code, root=root, site=SITE, store=STORE, canonical=SITE + SUPPORT_FOLDERS[code], lang_name=name,
                   lang_menu=menu(root, SUPPORT_FOLDERS, code), home=root + path, hreflangs=hreflangs("", SUPPORT_FOLDERS))
     render((HERE / "template-support.html").read_text(encoding="utf-8"), values, HERE / SUPPORT_FOLDERS[code] / "index.html")
 

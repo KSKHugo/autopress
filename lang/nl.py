@@ -9,7 +9,7 @@ T = {
     "hero_eyebrow": "Voor iPhone, iPad en Mac",
     "hero_h1": 'Een map Markdown erin. <span class="hl">Een WordPress-site eruit.</span>',
     "hero_lede": "Hybrid AutoPress uploadt veel Markdown-bestanden in één keer naar WordPress. Elk bestand wordt een bericht of een pagina, met koppen, links, lijsten, tabellen en afbeeldingen, opgeslagen als concept, meteen gepubliceerd of ingepland voor later.",
-    "soon": "Binnenkort in de App Store",
+    "store_alt": "Download in de Mac App Store", "store_ios": "Ook voor iPhone en iPad",
     "hero_more": "Bekijk hoe het werkt",
     "hero_alt": "Hybrid AutoPress op de Mac: zeven Markdown-documenten in de lijst, het bericht ‘Lissabon in drie dagen’ met uitgelichte afbeelding, naamsvermelding, alt-tekst, slug, samenvatting en categorieën.",
 
@@ -112,7 +112,7 @@ T = {
     "lang_h": 'Negen talen. <span class="hl">In de app en op deze pagina.</span>',
     "lang_p": "Hybrid AutoPress volgt de taal van je apparaat, en de ingebouwde hulp ook.",
     "end_h": 'Schrijf in Markdown. <span class="hl">Publiceer in bulk.</span>',
-    "end_lede": "Hybrid AutoPress komt naar de App Store: één app voor iPhone, iPad en Mac.",
+    "end_lede": "Hybrid AutoPress staat in de App Store: één app voor iPhone, iPad en Mac, zeven dagen gratis.",
     "req": "Vereist iOS 17, iPadOS 17 of macOS 14 · Een WordPress-site 5.6 of nieuwer, bereikbaar via https",
     "foot_imprint": "Colofon (Impressum)", "foot_privacy": "Privacy", "foot_app_privacy": "Privacy van de app", "foot_hybrid": "Hybrid Editor",
     "foot_hybrid_href": "https://hybrid-editor.com/nl/",

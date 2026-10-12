@@ -9,7 +9,7 @@ T = {
     "hero_eyebrow": "Para iPhone, iPad e Mac",
     "hero_h1": 'Entra uma pasta de Markdown. <span class="hl">Sai um site WordPress.</span>',
     "hero_lede": "O Hybrid AutoPress envia muitos ficheiros Markdown para o WordPress de uma só vez. Cada ficheiro torna-se um artigo ou uma página, com títulos, ligações, listas, tabelas e imagens, guardado como rascunho, publicado de imediato ou agendado para mais tarde.",
-    "soon": "Brevemente na App Store",
+    "store_alt": "Descarregar na Mac App Store", "store_ios": "Também para iPhone e iPad",
     "hero_more": "Ver como funciona",
     "hero_alt": "Hybrid AutoPress no Mac: sete documentos Markdown na lista, o artigo «Lisboa em três dias» com imagem de destaque, crédito, texto alternativo, slug, resumo e categorias.",
 
@@ -112,7 +112,7 @@ T = {
     "lang_h": 'Nove idiomas. <span class="hl">Na app e nesta página.</span>',
     "lang_p": "O Hybrid AutoPress segue o idioma do seu dispositivo, e a ajuda integrada também.",
     "end_h": 'Escreva em Markdown. <span class="hl">Publique em lote.</span>',
-    "end_lede": "O Hybrid AutoPress chega à App Store: uma app para iPhone, iPad e Mac.",
+    "end_lede": "O Hybrid AutoPress está na App Store: uma app para iPhone, iPad e Mac, sete dias grátis.",
     "req": "Requer iOS 17, iPadOS 17 ou macOS 14 · Um site WordPress 5.6 ou posterior, acessível por https",
     "foot_imprint": "Aviso legal (Impressum)", "foot_privacy": "Privacidade", "foot_app_privacy": "Privacidade da app", "foot_hybrid": "Hybrid Editor",
     "foot_hybrid_href": "https://hybrid-editor.com/pt/",

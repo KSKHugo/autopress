@@ -9,7 +9,7 @@ T = {
     "hero_eyebrow": "iPhone、iPad、Mac のために",
     "hero_h1": 'Markdown のフォルダを入れる。<span class="hl">WordPress サイトが出てくる。</span>',
     "hero_lede": "Hybrid AutoPress は、たくさんの Markdown ファイルを一度に WordPress へアップロードします。各ファイルは見出し、リンク、リスト、表、画像をそのままに投稿または固定ページになり、下書きとして保存、すぐに公開、または後日の予約公開ができます。",
-    "soon": "まもなく App Store に登場",
+    "store_alt": "Mac App Storeでダウンロード", "store_ios": "iPhone・iPad 版も",
     "hero_more": "使い方を見る",
     "hero_alt": "Mac 上の Hybrid AutoPress：リストに7件の Markdown 書類、投稿「リスボン3日間」にアイキャッチ画像、クレジット、代替テキスト、スラッグ、抜粋、カテゴリー。",
 
@@ -112,7 +112,7 @@ T = {
     "lang_h": '9つの言語。<span class="hl">アプリでも、このページでも。</span>',
     "lang_p": "Hybrid AutoPress はデバイスの言語に従います。内蔵ヘルプも同様です。",
     "end_h": 'Markdown で書く。<span class="hl">まとめて公開する。</span>',
-    "end_lede": "Hybrid AutoPress はまもなく App Store に登場：iPhone、iPad、Mac のための1つのアプリ。",
+    "end_lede": "Hybrid AutoPress は App Store で配信中：iPhone、iPad、Mac のための1つのアプリ。7日間無料。",
     "req": "iOS 17、iPadOS 17 または macOS 14 が必要 · https でアクセスできる WordPress 5.6 以降のサイト",
     "foot_imprint": "法的表示（Impressum）", "foot_privacy": "プライバシー", "foot_app_privacy": "アプリのプライバシー", "foot_hybrid": "Hybrid Editor",
     "foot_hybrid_href": "https://hybrid-editor.com/jp/",

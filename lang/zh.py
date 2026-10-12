@@ -9,7 +9,7 @@ T = {
     "hero_eyebrow": "适用于 iPhone、iPad 和 Mac",
     "hero_h1": '放进一个 Markdown 文件夹。<span class="hl">得到一个 WordPress 网站。</span>',
     "hero_lede": "Hybrid AutoPress 一次把许多 Markdown 文件上传到 WordPress。每个文件成为一篇文章或一个页面，保留标题、链接、列表、表格和图片，可存为草稿、立即发布或定时发布。",
-    "soon": "即将登陆 App Store",
+    "store_alt": "在Mac App Store下载", "store_ios": "也适用于 iPhone 和 iPad",
     "hero_more": "看看它怎么用",
     "hero_alt": "Mac 上的 Hybrid AutoPress：列表中有七篇 Markdown 文稿，文章“里斯本三日游”带有特色图片、署名、替代文本、别名、摘要和分类。",
 
@@ -112,7 +112,7 @@ T = {
     "lang_h": '九种语言。<span class="hl">在 App 中，也在本页。</span>',
     "lang_p": "Hybrid AutoPress 跟随设备的语言，内置帮助也一样。",
     "end_h": '用 Markdown 写作。<span class="hl">批量发布。</span>',
-    "end_lede": "Hybrid AutoPress 即将登陆 App Store：一个 App，适用于 iPhone、iPad 和 Mac。",
+    "end_lede": "Hybrid AutoPress 已在 App Store 上架：一个 App，适用于 iPhone、iPad 和 Mac，免费试用七天。",
     "req": "需要 iOS 17、iPadOS 17 或 macOS 14 · 一个可通过 https 访问的 WordPress 5.6 或更高版本的网站",
     "foot_imprint": "法律声明（Impressum）", "foot_privacy": "隐私", "foot_app_privacy": "App 隐私", "foot_hybrid": "Hybrid Editor",
     "foot_hybrid_href": "https://hybrid-editor.com/zh/",

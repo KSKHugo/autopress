@@ -6,6 +6,7 @@
 <title>{{title}}</title>
 <meta name="description" content="{{description}}">
 <meta name="theme-color" content="#1a3a5e">
+<meta name="apple-itunes-app" content="app-id=6816450874">
 <link rel="canonical" href="{{canonical}}">
 {{hreflangs}}
 <meta property="og:type" content="website">
@@ -53,8 +54,9 @@
     <h1 class="reveal" style="--d:.1s">{{hero_h1}}</h1>
     <p class="lede reveal" style="--d:.18s">{{hero_lede}}</p>
     <div class="actions reveal" style="--d:.26s">
-      <span class="soon"><i aria-hidden="true"></i>{{soon}}</span>
-      <a class="btn btn--ghost" href="#how">{{hero_more}}
+      <a class="badge" href="{{store}}" rel="noopener"><img src="{{root}}assets/badges/mac-app-store-{{lang}}.svg" alt="{{store_alt}}" width="195" height="50"></a>
+      <a class="btn btn--ghost" href="{{store}}" rel="noopener">{{store_ios}}</a>
+      <a class="btn btn--quiet" href="#how">{{hero_more}}
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
       </a>
     </div>
@@ -415,7 +417,10 @@ Lisbon rewards people who <span class="k">*walk*</span>.
       <img class="hero__icon" src="{{root}}assets/img/icon-512.png" alt="" width="112" height="112" loading="lazy">
       <h2>{{end_h}}</h2>
       <p class="lede">{{end_lede}}</p>
-      <div class="actions"><span class="soon"><i aria-hidden="true"></i>{{soon}}</span></div>
+      <div class="actions">
+        <a class="badge" href="{{store}}" rel="noopener"><img src="{{root}}assets/badges/mac-app-store-{{lang}}.svg" alt="{{store_alt}}" width="195" height="50"></a>
+        <a class="btn btn--ghost" href="{{store}}" rel="noopener">{{store_ios}}</a>
+      </div>
       <p class="req">{{req}}</p>
     </div>
   </div>

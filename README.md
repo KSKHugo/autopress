@@ -18,6 +18,7 @@ privacy.py, lang/*.py  the words of the app's privacy policy (German is the bind
 build.py               writes index.html, <lang>/index.html, datenschutz-app/<lang>/index.html and sitemap.xml
 assets/style.css       design: navy #1A3A5E / #254E7A and amber #F59E0B from the app icon
 assets/site.js         reveal on scroll, the pinned walkthrough, the hero zoom
+assets/badges/         Apple's “Download on the Mac App Store” badge per language (Apple's artwork, unchanged)
 assets/img/            app icon; assets/img/<lang>/ the screenshots (Mac, iPad, iPhone) in that language
 impressum/             the legal notice (German law), a static page in the same design
 datenschutz/           the privacy policy for the website, likewise static
