@@ -95,6 +95,8 @@ class Handler(BaseHTTPRequestHandler):
                 "newspack_post_subtitle": {"type": "string", "description": "A line under the headline."}, "jetpack_publicize_message": {"type": "string", "description": "Custom message for social sharing."}}}}}})
         if rest == "media" and self.command == "POST":
             name = (self.headers.get("Content-Disposition") or "").split('filename="')[-1].rstrip('"')
+            # Only the last part of the name: "../" must not write outside the log folder.
+            name = os.path.basename(name.replace("\\", "/")).lstrip(".") or "upload"
             media_id = new_id()
             # Kept next to the log, so a test can look at what the picture became.
             with open(os.path.join(os.path.dirname(os.path.abspath(LOG)), f"upload-{media_id}-{name}"), "wb") as handle:
