@@ -99,7 +99,11 @@ class Handler(BaseHTTPRequestHandler):
             name = os.path.basename(name.replace("\\", "/")).lstrip(".") or "upload"
             media_id = new_id()
             # Kept next to the log, so a test can look at what the picture became.
-            with open(os.path.join(os.path.dirname(os.path.abspath(LOG)), f"upload-{media_id}-{name}"), "wb") as handle:
+            folder = os.path.realpath(os.path.dirname(os.path.abspath(LOG)))
+            target = os.path.realpath(os.path.join(folder, f"upload-{media_id}-{name}"))
+            if not target.startswith(folder + os.sep):
+                return self.reply(400, {"code": "rest_upload_invalid_name", "message": "Invalid file name."})
+            with open(target, "wb") as handle:
                 handle.write(body)
             return self.reply(201, {"id": media_id, "source_url": f"{base}/wp-content/uploads/2026/09/{name}"})
         if rest.startswith("media/") and self.command == "POST":
